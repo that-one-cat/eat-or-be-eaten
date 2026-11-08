@@ -1,0 +1,31 @@
+{
+  "id": "c03_cliff_ledge",
+  "module": "cliff",
+  "biome": "c",
+  "size_class": "env_large",
+  "palette_row": 35,
+  "palette": {
+    "base": "#4A6E92",
+    "top": "#77A5AC",
+    "top_alt": "#689AA4",
+    "side": "#3A5384",
+    "side_alt": "#5F8FA0",
+    "under": "#222B55",
+    "dark": "#1A2147",
+    "detail": "#CDB89E",
+    "detail_alt": "#BCA78F"
+  },
+  "params": {
+    "shape": "ledge",
+    "cap": "sand"
+  },
+  "seed": 1103,
+  "variants": 2,
+  "footprint_m": [
+    20.0,
+    33.0,
+    18.0
+  ],
+  "sway": false,
+  "glow": false
+}

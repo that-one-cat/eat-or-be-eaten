@@ -1,0 +1,39 @@
+{
+  "id": "c07_rock_pillar",
+  "module": "bc_rock_pillar",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 36,
+  "palette": {
+    "base": "#3E5C88",
+    "top": "#6F9FA6",
+    "top_alt": "#5F8F9C",
+    "side": "#34507E",
+    "side_alt": "#5A8A9A",
+    "under": "#1F2852",
+    "dark": "#181F44"
+  },
+  "params": {
+    "radius": 3.8,
+    "spread": 4.2,
+    "min_frac": 0.3
+  },
+  "variant_params": [
+    {},
+    {
+      "height": 22.0,
+      "radius": 3.0,
+      "columns": 5,
+      "spread": 3.4
+    }
+  ],
+  "seed": 5007,
+  "variants": 2,
+  "footprint_m": [
+    11.4,
+    31.3,
+    11.8
+  ],
+  "sway": false,
+  "glow": false
+}

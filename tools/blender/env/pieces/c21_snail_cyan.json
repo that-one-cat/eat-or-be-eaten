@@ -1,0 +1,53 @@
+{
+  "id": "c21_snail_cyan",
+  "module": "food_snail",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 37,
+  "palette": {
+    "base": "#2A3550",
+    "base_alt": "#222C45",
+    "top": "#34425F",
+    "top_alt": "#3E4E70",
+    "side": "#2A3550",
+    "side_alt": "#222C45",
+    "under": "#161D33",
+    "dark": "#0C1222",
+    "detail": "#8FA8C8",
+    "detail_alt": "#B7C9DE",
+    "tip": "#D5E3F0",
+    "accent": "#3FF0FF",
+    "accent_alt": "#8CF6FF",
+    "inner": "#1A2440",
+    "trim": "#7FE8F0",
+    "trim_alt": "#4FC8D8"
+  },
+  "params": {
+    "scheme": "glow"
+  },
+  "variant_params": [
+    {},
+    {
+      "turns": 1.75,
+      "growth": 2.9,
+      "tube": 0.56,
+      "aspect": 2.0,
+      "segments": 12,
+      "shell_radius": 0.074,
+      "spire": 0.35,
+      "aperture_deg": 160.0,
+      "length": 0.29,
+      "width": 0.06,
+      "stalk": 0.06
+    }
+  ],
+  "seed": 6110,
+  "variants": 2,
+  "footprint_m": [
+    0.14,
+    0.21,
+    0.34
+  ],
+  "sway": false,
+  "glow": true
+}

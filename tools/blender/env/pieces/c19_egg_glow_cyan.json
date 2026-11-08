@@ -1,0 +1,66 @@
+{
+  "id": "c19_egg_glow_cyan",
+  "module": "egg_glow",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 37,
+  "palette": {
+    "base": "#2A3550",
+    "base_alt": "#222C45",
+    "top": "#34425F",
+    "top_alt": "#3E4E70",
+    "side": "#2A3550",
+    "side_alt": "#222C45",
+    "under": "#161D33",
+    "dark": "#0C1222",
+    "detail": "#8FA8C8",
+    "detail_alt": "#B7C9DE",
+    "tip": "#D5E3F0",
+    "accent": "#3FF0FF",
+    "accent_alt": "#8CF6FF",
+    "inner": "#1A2440",
+    "trim": "#7FE8F0",
+    "trim_alt": "#4FC8D8"
+  },
+  "params": {
+    "shape": "strand",
+    "helix": [
+      19,
+      0.038,
+      1.8,
+      0.09,
+      0.36,
+      0.035
+    ],
+    "facets": 12
+  },
+  "variant_params": [
+    {},
+    {
+      "stub": [
+        0.055,
+        0.045,
+        0.36,
+        0.07,
+        6
+      ],
+      "helix": [
+        19,
+        0.034,
+        2.2,
+        0.07,
+        0.3,
+        0.03
+      ]
+    }
+  ],
+  "seed": 6107,
+  "variants": 2,
+  "footprint_m": [
+    0.3,
+    0.45,
+    0.3
+  ],
+  "sway": false,
+  "glow": true
+}

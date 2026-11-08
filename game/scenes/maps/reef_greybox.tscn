@@ -1,0 +1,101 @@
+[gd_scene load_steps=19 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/reef_greybox.gd" id="1_root"]
+[ext_resource type="Script" path="res://scripts/world/game_loop.gd" id="2_loop"]
+[ext_resource type="PackedScene" path="res://scenes/maps/greybox_terrain.tscn" id="3_terrain"]
+[ext_resource type="Script" path="res://scripts/fish/player_view.gd" id="4_view"]
+[ext_resource type="Script" path="res://scripts/fish/camera_rig.gd" id="5_camera"]
+[ext_resource type="Script" path="res://scripts/fish/player_input.gd" id="6_input"]
+[ext_resource type="Script" path="res://scripts/ui/debug_overlay.gd" id="7_overlay"]
+[ext_resource type="Script" path="res://scripts/world/depth_environment.gd" id="8_env"]
+[ext_resource type="Script" path="res://scripts/world/npc_views.gd" id="9_npcs"]
+[ext_resource type="Script" path="res://scripts/world/feedback_fx.gd" id="10_fx"]
+[ext_resource type="Script" path="res://scripts/ui/hud.gd" id="11_hud"]
+[ext_resource type="Script" path="res://scripts/world/ambient_renderer.gd" id="12_ambient"]
+[ext_resource type="Script" path="res://scripts/world/underwater_fx.gd" id="13_fx"]
+[ext_resource type="Script" path="res://scripts/ui/mutation_pick_overlay.gd" id="15_pick"]
+[ext_resource type="Script" path="res://scripts/world/sonar_fx.gd" id="16_sonar"]
+[ext_resource type="Script" path="res://scripts/world/boss_fx.gd" id="17_boss"]
+
+[sub_resource type="Environment" id="Environment_water"]
+background_mode = 1
+background_color = Color(0.3, 0.68, 0.74, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.45, 0.7, 0.72, 1)
+ambient_light_energy = 0.6
+fog_enabled = true
+fog_mode = 0
+fog_light_color = Color(0.3, 0.68, 0.74, 1)
+fog_density = 0.025
+fog_sky_affect = 1.0
+glow_enabled = true
+glow_blend_mode = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_overlay"]
+font_size = 14
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
+
+[node name="ReefGreybox" type="Node3D"]
+script = ExtResource("1_root")
+
+[node name="GameLoop" type="Node" parent="."]
+script = ExtResource("2_loop")
+
+[node name="GreyboxTerrain" parent="." instance=ExtResource("3_terrain")]
+build_surface = false
+
+[node name="PlayerView" type="Node3D" parent="."]
+script = ExtResource("4_view")
+
+[node name="AmbientRenderer" type="Node3D" parent="."]
+script = ExtResource("12_ambient")
+
+[node name="NpcViews" type="Node3D" parent="."]
+script = ExtResource("9_npcs")
+
+[node name="FeedbackFx" type="Node3D" parent="."]
+script = ExtResource("10_fx")
+
+[node name="CameraRig" type="Camera3D" parent="."]
+fov = 70.0
+script = ExtResource("5_camera")
+
+[node name="PlayerInput" type="Node" parent="."]
+script = ExtResource("6_input")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, 0.25, -0.433013, 0, 0.866025, 0.5, 0.5, -0.433013, 0.75, 0, 0, 0)
+light_color = Color(0.85, 0.97, 1, 1)
+light_energy = 1.1
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." node_paths=PackedStringArray("sun")]
+environment = SubResource("Environment_water")
+script = ExtResource("8_env")
+sun = NodePath("../Sun")
+
+[node name="UnderwaterFx" type="Node3D" parent="."]
+script = ExtResource("13_fx")
+
+[node name="SonarFx" type="Node3D" parent="."]
+script = ExtResource("16_sonar")
+
+[node name="BossFx" type="Node3D" parent="."]
+script = ExtResource("17_boss")
+
+[node name="Hud" type="CanvasLayer" parent="."]
+script = ExtResource("11_hud")
+
+[node name="MutationPickOverlay" type="CanvasLayer" parent="."]
+layer = 5
+script = ExtResource("15_pick")
+
+[node name="DebugOverlay" type="CanvasLayer" parent="."]
+script = ExtResource("7_overlay")
+
+[node name="Label" type="Label" parent="DebugOverlay"]
+offset_left = 10.0
+offset_top = 8.0
+offset_right = 360.0
+offset_bottom = 200.0
+label_settings = SubResource("LabelSettings_overlay")

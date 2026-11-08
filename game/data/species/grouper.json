@@ -1,0 +1,20 @@
+{
+	"id": "grouper",
+	"name": "Grouper",
+	"temperament": "retaliate",
+	"tier": "large",
+	"length_m": { "min": 1.0, "max": 2.0 },
+	"base_hp": 100,
+	"xp": 90,
+	"swim_speed_mps": 2.0,
+	"boost_mult": 1.8,
+	"boost_stamina": 100,
+	"turn_rate_deg_s": 140,
+	"accel_mps2": 8,
+	"drag_per_s": 1,
+	"brake_decel_mps2": 10,
+	"depth_range_m": [20, 50],
+	"bite_mult": 1.5,
+	"behaviour": { "boost_within_m": 0, "wander_speed_frac": 0.25, "wander_radius_m": 8, "wander_retarget_s": 12, "think_interval_ticks": 3, "seabed_clearance_m": 1.5 },
+	"zones": ["rock_arches"]
+}

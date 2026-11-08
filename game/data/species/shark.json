@@ -1,0 +1,20 @@
+{
+	"id": "shark",
+	"name": "Shark",
+	"temperament": "predator",
+	"tier": "large",
+	"length_m": { "min": 2.5, "max": 3.5 },
+	"base_hp": 100,
+	"xp": 180,
+	"swim_speed_mps": 6.5,
+	"boost_mult": 1.8,
+	"boost_stamina": 100,
+	"turn_rate_deg_s": 110,
+	"accel_mps2": 7,
+	"drag_per_s": 0.8,
+	"brake_decel_mps2": 9,
+	"depth_range_m": [5, 55],
+	"detection_radius_m": 35,
+	"behaviour": { "boost_within_m": 8, "wander_speed_frac": 0.5, "wander_radius_m": 40, "wander_retarget_s": 10, "think_interval_ticks": 3, "seabed_clearance_m": 3.0 },
+	"zones": ["open_water", "cliff_edge"]
+}

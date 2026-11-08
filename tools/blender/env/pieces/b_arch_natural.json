@@ -1,0 +1,38 @@
+{
+  "id": "b_arch_natural",
+  "module": "bc_natural_arch",
+  "biome": "b",
+  "size_class": "env_medium",
+  "palette_row": 61,
+  "palette": {
+    "base": "#4E7F7C",
+    "top": "#7FAE9E",
+    "top_alt": "#6FA092",
+    "side": "#3F6A6E",
+    "side_alt": "#4C7A7A",
+    "under": "#243E48",
+    "dark": "#1C3038",
+    "detail": "#6E9A4E",
+    "detail_alt": "#5D8743",
+    "trim": "#7A6A3E",
+    "trim_alt": "#665834"
+  },
+  "params": {},
+  "variant_params": [
+    {},
+    {
+      "sag": 1.2,
+      "tilt": 1.0,
+      "clear": 13.8
+    }
+  ],
+  "seed": 5106,
+  "variants": 2,
+  "footprint_m": [
+    24.4,
+    19.6,
+    7.2
+  ],
+  "sway": false,
+  "glow": false
+}

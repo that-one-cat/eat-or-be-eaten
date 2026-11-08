@@ -1,0 +1,48 @@
+{
+  "id": "b_kelp_mid",
+  "module": "bc_kelp",
+  "biome": "b",
+  "size_class": "env_small",
+  "palette_row": 60,
+  "palette": {
+    "base": "#3E7E4A",
+    "base_alt": "#4F9150",
+    "under": "#22402E",
+    "detail": "#A88A2E",
+    "detail_alt": "#8F7526",
+    "trim": "#5C5A2C",
+    "trim_alt": "#4A4824"
+  },
+  "params": {
+    "segment": 1.7,
+    "blade": [
+      0.8,
+      1.7
+    ],
+    "spacing": 0.42,
+    "stipe_radius": 0.075,
+    "width": 0.45
+  },
+  "variant_params": [
+    {
+      "height": 12.0
+    },
+    {
+      "height": 13.8
+    },
+    {
+      "height": 10.6,
+      "golden": true
+    }
+  ],
+  "seed": 5102,
+  "variants": 3,
+  "footprint_m": [
+    2.1,
+    12.4,
+    2.1
+  ],
+  "sway": true,
+  "glow": false,
+  "double_sided": true
+}

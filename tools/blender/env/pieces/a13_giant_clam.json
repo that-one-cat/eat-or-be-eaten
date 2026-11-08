@@ -1,0 +1,47 @@
+{
+  "id": "a13_giant_clam",
+  "module": "a_clam",
+  "biome": "a",
+  "size_class": "env_small",
+  "palette_row": 48,
+  "palette": {
+    "base": "#EFE3C2",
+    "base_alt": "#E2CFA8",
+    "top": "#F7EED6",
+    "top_alt": "#E9D9B4",
+    "side": "#DCC59E",
+    "side_alt": "#CDB28C",
+    "under": "#B39878",
+    "inner": "#A386CF",
+    "tip": "#C3AAE6"
+  },
+  "params": {},
+  "seed": 4013,
+  "variants": 2,
+  "footprint_m": [
+    1.3,
+    0.8,
+    0.9
+  ],
+  "sway": false,
+  "glow": false,
+  "variant_params": [
+    {},
+    {
+      "clams": [
+        [
+          0.0,
+          0.0,
+          0.6,
+          0.0
+        ],
+        [
+          0.62,
+          0.15,
+          0.45,
+          35.0
+        ]
+      ]
+    }
+  ]
+}

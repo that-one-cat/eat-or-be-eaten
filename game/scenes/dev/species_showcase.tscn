@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/fish/species_showcase.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://assets/models/species/sp_fusiform_reef_fish_s1_lod0.glb" id="2_reef"]
+[ext_resource type="PackedScene" path="res://assets/models/species/sp_ray_ray_s1_lod0.glb" id="3_ray"]
+[ext_resource type="Material" path="res://shaders/m_ray_swim.tres" id="4_ray_swim"]
+
+[sub_resource type="Gradient" id="Gradient_bg"]
+offsets = PackedFloat32Array(0, 1)
+colors = PackedColorArray(0.243, 0.557, 0.584, 1, 0.133, 0.208, 0.353, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bg"]
+gradient = SubResource("Gradient_bg")
+width = 4
+height = 256
+fill_from = Vector2(0, 0)
+fill_to = Vector2(0, 1)
+
+[sub_resource type="Environment" id="Environment_showcase"]
+background_mode = 3
+ambient_light_source = 2
+ambient_light_color = Color(0.373, 0.651, 0.69, 1)
+ambient_light_energy = 0.55
+
+[node name="SpeciesShowcase" type="Node3D"]
+script = ExtResource("1_script")
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Gradient" type="TextureRect" parent="Background"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_bg")
+expand_mode = 1
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_showcase")
+
+[node name="KeyLight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.780869, 0.44503, -0.438397, 0, 0.701778, 0.712396, 0.624695, -0.556288, 0.547997, 0, 2, 0)
+light_color = Color(1, 0.96, 0.88, 1)
+light_energy = 1.1
+
+[node name="FillLight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.640184, 0.605443, 0.472866, 0, 0.615534, -0.78811, -0.768221, 0.504536, 0.394055, 0, -2, 0)
+light_color = Color(0.66, 0.88, 0.88, 1)
+light_energy = 0.25
+
+[node name="Camera3D" type="Camera3D" parent="."]
+fov = 40.0
+near = 0.02
+far = 50.0
+
+[node name="ReefJuvenile" parent="." instance=ExtResource("2_reef")]
+transform = Transform3D(-0.573576, 0, 0.819152, 0, 1, 0, -0.819152, 0, -0.573576, -0.17, -0.07, -0.66)
+metadata/growth = 0.0
+
+[node name="ReefAdult" parent="." instance=ExtResource("2_reef")]
+transform = Transform3D(-0.573576, 0, 0.819152, 0, 1, 0, -0.819152, 0, -0.573576, 0.12, -0.07, -0.66)
+metadata/growth = 1.0
+
+[node name="RayJuvenile" parent="." instance=ExtResource("3_ray")]
+transform = Transform3D(-0.422618, 0, 0.906308, 0.453154, 0.866025, 0.211309, -0.784886, 0.5, -0.365998, -1.0, 0.5, -4.0)
+metadata/growth = 0.0
+metadata/swim_material = ExtResource("4_ray_swim")
+
+[node name="RayAdult" parent="." instance=ExtResource("3_ray")]
+transform = Transform3D(-0.422618, 0, 0.906308, 0.453154, 0.866025, 0.211309, -0.784886, 0.5, -0.365998, 0.75, 0.45, -4.0)
+metadata/growth = 1.0
+metadata/swim_material = ExtResource("4_ray_swim")

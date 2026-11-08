@@ -1,0 +1,100 @@
+{
+  "id": "b_egg_lavender",
+  "module": "egg_pearls",
+  "biome": "b",
+  "size_class": "env_small",
+  "palette_row": 34,
+  "palette": {
+    "base": "#F4A261",
+    "base_alt": "#F8C08A",
+    "top": "#FFD3A5",
+    "top_alt": "#FFE4C8",
+    "side": "#F28CA0",
+    "side_alt": "#F7B0BE",
+    "under": "#C77D4E",
+    "dark": "#8A4B3A",
+    "detail": "#CFEFE3",
+    "detail_alt": "#9ED9CF",
+    "tip": "#F6F1E4",
+    "accent": "#FFF8E7",
+    "accent_alt": "#D9C7F2",
+    "inner": "#B79BE0",
+    "trim": "#BFE6EA",
+    "trim_alt": "#8CCBD6"
+  },
+  "params": {
+    "strands": [
+      [
+        0.0,
+        0.0,
+        7,
+        0.04,
+        0.036,
+        0.02,
+        20.0
+      ],
+      [
+        -0.1,
+        0.02,
+        5,
+        0.039,
+        0.036,
+        0.015,
+        170.0
+      ]
+    ],
+    "knot": [],
+    "cluster": [
+      0.13,
+      0.0,
+      0.037
+    ],
+    "tones": {
+      "top": "accent_alt",
+      "side": [
+        "inner",
+        "accent_alt"
+      ],
+      "under": "inner"
+    }
+  },
+  "variant_params": [
+    {},
+    {
+      "strands": [
+        [
+          0.0,
+          0.0,
+          8,
+          0.04,
+          0.035,
+          0.025,
+          -30.0
+        ],
+        [
+          0.1,
+          -0.03,
+          4,
+          0.039,
+          0.036,
+          0.02,
+          10.0
+        ]
+      ],
+      "cluster": [
+        -0.12,
+        0.03,
+        0.036
+      ]
+    }
+  ],
+  "seed": 6106,
+  "variants": 2,
+  "footprint_m": [
+    0.32,
+    0.55,
+    0.14
+  ],
+  "sway": false,
+  "glow": false
+}

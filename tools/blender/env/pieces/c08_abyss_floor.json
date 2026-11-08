@@ -1,0 +1,33 @@
+{
+  "id": "c08_abyss_floor",
+  "module": "sand_tile",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 50,
+  "palette": {
+    "base": "#3A4E78",
+    "top": "#5A7299",
+    "top_alt": "#4E6790",
+    "side": "#34477A",
+    "side_alt": "#3F5686",
+    "under": "#1E2652",
+    "dark": "#151B40",
+    "accent": "#3FF0E0",
+    "accent_alt": "#C070FF"
+  },
+  "params": {
+    "ripple_amp": 0.07,
+    "noise": 0.06,
+    "thickness": 0.35,
+    "ripple_waves": 2
+  },
+  "seed": 5008,
+  "variants": 2,
+  "footprint_m": [
+    8.0,
+    0.5,
+    8.0
+  ],
+  "sway": false,
+  "glow": false
+}

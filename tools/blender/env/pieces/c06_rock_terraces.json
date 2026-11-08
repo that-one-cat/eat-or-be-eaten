@@ -1,0 +1,39 @@
+{
+  "id": "c06_rock_terraces",
+  "module": "terraces",
+  "biome": "c",
+  "size_class": "env_medium",
+  "palette_row": 35,
+  "palette": {
+    "base": "#4A6E92",
+    "top": "#77A5AC",
+    "top_alt": "#689AA4",
+    "side": "#3A5384",
+    "side_alt": "#5F8FA0",
+    "under": "#222B55",
+    "dark": "#1A2147",
+    "detail": "#CDB89E",
+    "detail_alt": "#BCA78F"
+  },
+  "params": {},
+  "seed": 1106,
+  "variants": 2,
+  "footprint_m": [
+    14.0,
+    9.0,
+    12.0
+  ],
+  "sway": false,
+  "glow": false,
+  "variant_params": [
+    {
+      "steps": 4
+    },
+    {
+      "steps": 3,
+      "width": 12.0,
+      "height": 7.0,
+      "segments": 3
+    }
+  ]
+}

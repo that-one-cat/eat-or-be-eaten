@@ -1,0 +1,78 @@
+{
+	"nodes": [
+		{
+			"id": "hunter_bite_power",
+			"name": "Bite Power",
+			"description": "Bite power +25%.",
+			"branch": "hunter",
+			"tier": 1,
+			"requires": null,
+			"effects": { "bite_power_mult": 1.25 }
+		},
+		{
+			"id": "hunter_bite_dash",
+			"name": "Bite-Dash",
+			"description": "Unlocks Bite-Dash (right mouse): 8 m lunge ending in a bite, cooldown 6 s.",
+			"branch": "hunter",
+			"tier": 2,
+			"requires": "hunter_bite_power",
+			"effects": {},
+			"grants_ability": "bite_dash"
+		},
+		{
+			"id": "hunter_swim_speed",
+			"name": "Swim Speed",
+			"description": "Swim speed +15%.",
+			"branch": "hunter",
+			"tier": 3,
+			"requires": "hunter_bite_dash",
+			"effects": { "swim_speed_mult": 1.15 }
+		},
+		{
+			"id": "hunter_turbo_boost",
+			"name": "Turbo Boost",
+			"description": "Boost lasts 2x longer and is 25% faster.",
+			"branch": "hunter",
+			"tier": 4,
+			"requires": "hunter_swim_speed",
+			"effects": { "boost_duration_mult": 2.0, "boost_speed_mult": 1.25 }
+		},
+		{
+			"id": "survivor_efficient_metabolism",
+			"name": "Efficient Metabolism",
+			"description": "Hunger drains 40% slower.",
+			"branch": "survivor",
+			"tier": 1,
+			"requires": null,
+			"effects": { "hunger_drain_mult": 0.6 }
+		},
+		{
+			"id": "survivor_sonar",
+			"name": "Sonar",
+			"description": "Unlocks Sonar (Q): outlines creatures within 40 m for 3 s, tinted by size; cooldown 15 s.",
+			"branch": "survivor",
+			"tier": 2,
+			"requires": "survivor_efficient_metabolism",
+			"effects": {},
+			"grants_ability": "sonar"
+		},
+		{
+			"id": "survivor_armor_scales",
+			"name": "Armor Scales",
+			"description": "Damage taken -25%.",
+			"branch": "survivor",
+			"tier": 3,
+			"requires": "survivor_sonar",
+			"effects": { "damage_taken_mult": 0.75 }
+		},
+		{
+			"id": "survivor_wide_vision",
+			"name": "Wide Vision",
+			"description": "Presence indicators cover 360 degrees instead of 270.",
+			"branch": "survivor",
+			"tier": 4,
+			"requires": "survivor_armor_scales",
+			"effects": { "presence_sector_deg": 360 }
+		}
+	]
+}

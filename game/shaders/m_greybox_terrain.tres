@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://shaders/env_greybox.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="res://shaders/textures/caustics_cells.png" id="2_caustics"]
+
+[resource]
+resource_name = "M_Greybox_Terrain"
+render_priority = 0
+shader = ExtResource("1_shader")
+shader_parameter/caustics_tex = ExtResource("2_caustics")

@@ -1,0 +1,20 @@
+{
+	"id": "barracuda",
+	"name": "Barracuda",
+	"temperament": "predator",
+	"tier": "interactive",
+	"length_m": { "min": 0.8, "max": 1.5 },
+	"base_hp": 100,
+	"xp": 60,
+	"swim_speed_mps": 8.0,
+	"boost_mult": 1.8,
+	"boost_stamina": 100,
+	"turn_rate_deg_s": 180,
+	"accel_mps2": 9,
+	"drag_per_s": 1.2,
+	"brake_decel_mps2": 12,
+	"depth_range_m": [5, 50],
+	"detection_radius_m": 36,
+	"behaviour": { "boost_within_m": 6, "wander_speed_frac": 0.35, "wander_radius_m": 50, "wander_retarget_s": 8, "think_interval_ticks": 2, "seabed_clearance_m": 2.0 },
+	"zones": ["kelp_forest", "open_water"]
+}

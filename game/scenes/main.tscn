@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="PackedScene" path="res://scenes/ui/main_menu.tscn" id="2_menu"]
+[ext_resource type="PackedScene" path="res://scenes/ui/pause_menu.tscn" id="3_pause"]
+[ext_resource type="PackedScene" path="res://scenes/ui/settings_menu.tscn" id="4_settings"]
+[ext_resource type="PackedScene" path="res://scenes/ui/victory_screen.tscn" id="5_victory"]
+[ext_resource type="PackedScene" path="res://scenes/ui/tutorial_hints.tscn" id="6_hints"]
+[ext_resource type="Script" path="res://scripts/audio/ui_sounds.gd" id="7_ui_sounds"]
+
+[node name="Main" type="Node"]
+process_mode = 3
+script = ExtResource("1_main")
+run_scene = "res://scenes/maps/reef.tscn"
+
+[node name="Run" type="Node" parent="."]
+process_mode = 1
+
+[node name="TutorialHints" parent="." instance=ExtResource("6_hints")]
+
+[node name="MainMenu" parent="." instance=ExtResource("2_menu")]
+
+[node name="PauseMenu" parent="." instance=ExtResource("3_pause")]
+
+[node name="SettingsMenu" parent="." instance=ExtResource("4_settings")]
+
+[node name="VictoryScreen" parent="." instance=ExtResource("5_victory")]
+
+[node name="UiSounds" type="Node" parent="."]
+script = ExtResource("7_ui_sounds")
+
+[node name="Fade" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="Rect" type="ColorRect" parent="Fade"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)

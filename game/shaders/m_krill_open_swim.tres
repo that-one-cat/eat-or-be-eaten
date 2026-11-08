@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://shaders/fish_swim.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="res://assets/textures/palette.png" id="2_palette"]
+
+[resource]
+resource_name = "M_Palette_KrillOpen"
+render_priority = 0
+shader = ExtResource("1_shader")
+shader_parameter/palette = ExtResource("2_palette")
+shader_parameter/swim_speed = 6.0
+shader_parameter/side_amp = 0.02
+shader_parameter/yaw_amp = 0.08
+shader_parameter/yaw_pivot_z = 0.0
+shader_parameter/wave_amp = 0.05
+shader_parameter/wave_freq = 4.0
+shader_parameter/wave_exp = 1.0
+shader_parameter/nose_z = -0.5
+shader_parameter/glow_slot = 11.0
+shader_parameter/glow_strength = 0.0
+shader_parameter/glow_body = 0.15
+shader_parameter/glow_pulse_amp = 0.0
+shader_parameter/glow_pulse_hz = 0.5

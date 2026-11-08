@@ -1,0 +1,40 @@
+{
+  "id": "c15_frond_glow",
+  "module": "bc_frond",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 56,
+  "palette": {
+    "base": "#2E8A4E",
+    "base_alt": "#267A44",
+    "under": "#1A4A2C",
+    "accent": "#80FF90"
+  },
+  "params": {},
+  "variant_params": [
+    {},
+    {
+      "angles": [
+        -45.0,
+        -15.0,
+        12.0,
+        44.0
+      ],
+      "lengths": [
+        1.0,
+        1.4,
+        1.3,
+        0.9
+      ]
+    }
+  ],
+  "seed": 5015,
+  "variants": 2,
+  "footprint_m": [
+    1.3,
+    1.5,
+    0.4
+  ],
+  "sway": true,
+  "glow": true
+}

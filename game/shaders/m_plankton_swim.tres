@@ -1,0 +1,23 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://shaders/fish_swim.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="res://assets/textures/palette.png" id="2_palette"]
+
+[resource]
+resource_name = "M_Palette_PlanktonDrift"
+render_priority = 0
+shader = ExtResource("1_shader")
+shader_parameter/palette = ExtResource("2_palette")
+shader_parameter/swim_speed = 2.0
+shader_parameter/side_amp = 0.03
+shader_parameter/yaw_amp = 0.12
+shader_parameter/yaw_pivot_z = 0.0
+shader_parameter/wave_amp = 0.06
+shader_parameter/wave_freq = 3.0
+shader_parameter/wave_exp = 1.0
+shader_parameter/nose_z = -0.5
+shader_parameter/glow_slot = 11.0
+shader_parameter/glow_strength = 1.8
+shader_parameter/glow_body = 0.4
+shader_parameter/glow_pulse_amp = 0.4
+shader_parameter/glow_pulse_hz = 0.6

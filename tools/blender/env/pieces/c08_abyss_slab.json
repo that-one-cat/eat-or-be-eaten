@@ -1,0 +1,35 @@
+{
+  "id": "c08_abyss_slab",
+  "module": "slab_stack",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 36,
+  "palette": {
+    "base": "#3E5C88",
+    "top": "#6F9FA6",
+    "top_alt": "#5F8F9C",
+    "side": "#34507E",
+    "side_alt": "#5A8A9A",
+    "under": "#1F2852",
+    "dark": "#181F44"
+  },
+  "params": {
+    "tiers": 1,
+    "radius": [
+      2.2,
+      0.95
+    ],
+    "height": 0.6,
+    "sides": 6,
+    "bevel": 0.12
+  },
+  "seed": 1109,
+  "variants": 2,
+  "footprint_m": [
+    4.4,
+    0.6,
+    1.9
+  ],
+  "sway": false,
+  "glow": false
+}

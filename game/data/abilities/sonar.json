@@ -1,0 +1,12 @@
+{
+	"id": "sonar",
+	"name": "Sonar",
+	"description": "Outline every creature within 40 m for 3 s: smaller, similar or bigger than you.",
+	"kind": "active",
+	"input_action": "sonar",
+	"cooldown_s": 15,
+	"radius_m": 40,
+	"duration_s": 3,
+	"smaller_below_ratio": 0.8,
+	"bigger_above_ratio": 1.25
+}

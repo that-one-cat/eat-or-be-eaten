@@ -1,0 +1,41 @@
+{
+  "id": "a09_seagrass_tuft",
+  "module": "a_seagrass",
+  "biome": "a",
+  "size_class": "env_small",
+  "palette_row": 46,
+  "palette": {
+    "base": "#5DAE5E",
+    "base_alt": "#4E9E54",
+    "side": "#6FBE68",
+    "side_alt": "#58A85A",
+    "top": "#86CC78",
+    "top_alt": "#74C06A"
+  },
+  "params": {},
+  "seed": 4009,
+  "variants": 3,
+  "footprint_m": [
+    0.7,
+    0.8,
+    0.7
+  ],
+  "sway": true,
+  "glow": false,
+  "variant_params": [
+    {},
+    {
+      "blades": 22,
+      "radius": 0.6
+    },
+    {
+      "blades": 16,
+      "height": [
+        0.7,
+        1.1
+      ],
+      "radius": 0.35
+    }
+  ],
+  "double_sided": true
+}

@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://shaders/fish_swim.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="res://assets/textures/palette.png" id="2_palette"]
+
+[resource]
+resource_name = "M_Palette_Swim"
+render_priority = 0
+shader = ExtResource("1_shader")
+shader_parameter/palette = ExtResource("2_palette")
+shader_parameter/rim_strength = 0.55
+shader_parameter/glow_slot = 11.0
+shader_parameter/glow_strength = 1.4

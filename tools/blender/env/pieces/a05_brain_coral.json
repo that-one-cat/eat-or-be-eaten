@@ -1,0 +1,49 @@
+{
+  "id": "a05_brain_coral",
+  "module": "a_coral_brain",
+  "biome": "a",
+  "size_class": "env_small",
+  "palette_row": 44,
+  "palette": {
+    "base": "#5FC2B4",
+    "base_alt": "#E8904E",
+    "top": "#78D4C6",
+    "top_alt": "#6ACABB",
+    "side": "#4FA89C",
+    "under": "#3E8F86",
+    "dark": "#A05A32",
+    "inner": "#B8683A",
+    "detail": "#E8827A",
+    "detail_alt": "#DA706C",
+    "tip": "#F3A35E",
+    "trim": "#B2575E",
+    "trim_alt": "#A04C55"
+  },
+  "params": {},
+  "seed": 4005,
+  "variants": 3,
+  "footprint_m": [
+    1.4,
+    0.6,
+    1.4
+  ],
+  "sway": false,
+  "glow": false,
+  "variant_params": [
+    {
+      "scheme": "teal"
+    },
+    {
+      "scheme": "pink",
+      "radius": 1.0,
+      "height": 0.7
+    },
+    {
+      "scheme": "orange",
+      "radius": 0.5,
+      "height": 0.42,
+      "ridges": 2,
+      "sides": 10
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "a10_rock_stack",
+  "module": "slab_stack",
+  "biome": "a",
+  "size_class": "env_small",
+  "palette_row": 33,
+  "palette": {
+    "base": "#9E8072",
+    "top": "#C9A48E",
+    "top_alt": "#B8927E",
+    "side": "#94706A",
+    "side_alt": "#A6817A",
+    "under": "#6E5257",
+    "detail": "#C08484",
+    "detail_alt": "#DCA59C",
+    "tip": "#C6A2D4"
+  },
+  "params": {},
+  "seed": 1010,
+  "variants": 3,
+  "footprint_m": [
+    5.0,
+    2.0,
+    4.5
+  ],
+  "sway": false,
+  "glow": false,
+  "variant_params": [
+    {
+      "tiers": 3
+    },
+    {
+      "tiers": 2,
+      "radius": [
+        2.0,
+        1.7
+      ]
+    },
+    {
+      "tiers": 3,
+      "radius": [
+        3.2,
+        2.4
+      ],
+      "height": 0.8
+    }
+  ]
+}

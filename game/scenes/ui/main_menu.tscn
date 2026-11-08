@@ -1,0 +1,91 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/main_menu.gd" id="1_script"]
+[ext_resource type="Theme" path="res://ui/theme/main_theme.tres" id="2_theme"]
+
+[sub_resource type="Gradient" id="Gradient_water"]
+offsets = PackedFloat32Array(0, 0.45, 1)
+colors = PackedColorArray(0.22, 0.62, 0.7, 1, 0.07, 0.27, 0.38, 1, 0.02, 0.06, 0.12, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_water"]
+gradient = SubResource("Gradient_water")
+width = 16
+height = 256
+fill_from = Vector2(0.5, 0)
+fill_to = Vector2(0.5, 1)
+
+[node name="MainMenu" type="CanvasLayer"]
+process_mode = 3
+layer = 10
+script = ExtResource("1_script")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+
+[node name="Background" type="TextureRect" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("GradientTexture2D_water")
+expand_mode = 1
+
+[node name="Center" type="CenterContainer" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Column" type="VBoxContainer" parent="Root/Center"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Title" type="Label" parent="Root/Center/Column"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"OverlayTitle"
+theme_override_font_sizes/font_size = 72
+text = "EAT OR BE EATEN"
+horizontal_alignment = 1
+
+[node name="Tagline" type="Label" parent="Root/Center/Column"]
+layout_mode = 2
+theme_type_variation = &"OverlaySub"
+text = "Eat. Bite. Grow. Defeat the giant shark of the abyss."
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="Root/Center/Column"]
+custom_minimum_size = Vector2(0, 28)
+layout_mode = 2
+
+[node name="PlayButton" type="Button" parent="Root/Center/Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 54)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Play"
+
+[node name="SettingsButton" type="Button" parent="Root/Center/Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 54)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Settings"
+
+[node name="QuitButton" type="Button" parent="Root/Center/Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 54)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Quit"

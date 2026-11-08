@@ -1,0 +1,28 @@
+{
+  "id": "b_anchor",
+  "module": "bc_anchor",
+  "biome": "b",
+  "size_class": "env_small",
+  "palette_row": 63,
+  "palette": {
+    "base": "#7A4A3A",
+    "base_alt": "#8C5844",
+    "top": "#A0684C",
+    "side": "#6A4034",
+    "under": "#3E2A28",
+    "detail": "#C2AE84",
+    "detail_alt": "#A8946C",
+    "trim": "#D9783A",
+    "trim_alt": "#B89A6A"
+  },
+  "params": {},
+  "seed": 5110,
+  "variants": 1,
+  "footprint_m": [
+    2.2,
+    1.3,
+    1.7
+  ],
+  "sway": false,
+  "glow": false
+}

@@ -1,0 +1,43 @@
+{
+  "id": "c18_fan_coral_dark",
+  "module": "bc_fan_coral",
+  "biome": "c",
+  "size_class": "env_medium",
+  "palette_row": 59,
+  "palette": {
+    "base": "#2A1E3C",
+    "side": "#2A1E3C",
+    "side_alt": "#22182F",
+    "under": "#170F22",
+    "accent": "#C070FF"
+  },
+  "params": {
+    "trunk": 0.35,
+    "radius": 0.08,
+    "spread": [
+      30.0,
+      50.0
+    ],
+    "shrink": 0.8,
+    "prune": 0.05
+  },
+  "variant_params": [
+    {},
+    {
+      "trunk": 0.4,
+      "spread": [
+        26.0,
+        44.0
+      ]
+    }
+  ],
+  "seed": 5018,
+  "variants": 2,
+  "footprint_m": [
+    1.5,
+    1.1,
+    0.2
+  ],
+  "sway": true,
+  "glow": true
+}

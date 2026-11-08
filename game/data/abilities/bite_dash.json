@@ -1,0 +1,11 @@
+{
+	"id": "bite_dash",
+	"name": "Bite-Dash",
+	"description": "Lunge 8 m forward and bite at the end.",
+	"kind": "active",
+	"input_action": "bite_dash",
+	"cooldown_s": 6,
+	"lunge_distance_m": 8,
+	"lunge_duration_s": 0.35,
+	"exit_speed_frac": 0.2
+}

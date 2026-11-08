@@ -1,0 +1,45 @@
+{
+  "id": "c14_anemone_glow",
+  "module": "bc_anemone",
+  "biome": "c",
+  "size_class": "env_medium",
+  "palette_row": 55,
+  "palette": {
+    "base": "#3FD8C0",
+    "side": "#3FD8C0",
+    "side_alt": "#33C2AE",
+    "under": "#262A4A",
+    "dark": "#1A1C36",
+    "detail": "#E87AC0",
+    "detail_alt": "#D86AB0",
+    "accent": "#FF7AC8"
+  },
+  "params": {
+    "thick": 0.085,
+    "length": [
+      0.6,
+      0.9
+    ]
+  },
+  "variant_params": [
+    {},
+    {
+      "outer": 10,
+      "inner": 4,
+      "length": [
+        0.5,
+        0.75
+      ],
+      "foot_radius": 0.26
+    }
+  ],
+  "seed": 5014,
+  "variants": 2,
+  "footprint_m": [
+    1.7,
+    1.1,
+    1.7
+  ],
+  "sway": true,
+  "glow": true
+}

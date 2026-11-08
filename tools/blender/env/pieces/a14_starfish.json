@@ -1,0 +1,65 @@
+{
+  "id": "a14_starfish",
+  "module": "a_starfish",
+  "biome": "a",
+  "size_class": "env_small",
+  "palette_row": 47,
+  "palette": {
+    "base": "#F2C14A",
+    "base_alt": "#9E8A7E",
+    "top": "#FAD772",
+    "top_alt": "#B8A090",
+    "side": "#E8B23C",
+    "side_alt": "#F6CC5C",
+    "under": "#C08A2C",
+    "dark": "#7A4E18",
+    "inner": "#A86E1E",
+    "detail": "#F59A4A",
+    "detail_alt": "#EC8640",
+    "tip": "#F9B46A",
+    "trim": "#E8665A",
+    "trim_alt": "#D4554C"
+  },
+  "params": {},
+  "seed": 4014,
+  "variants": 3,
+  "footprint_m": [
+    0.5,
+    0.1,
+    0.4
+  ],
+  "sway": false,
+  "glow": false,
+  "variant_params": [
+    {
+      "scheme": "orange"
+    },
+    {
+      "scheme": "red",
+      "radius": 0.2
+    },
+    {
+      "scheme": "orange",
+      "stars": [
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.5,
+          0.2,
+          0.7,
+          20.0
+        ],
+        [
+          -0.3,
+          0.45,
+          0.6,
+          50.0
+        ]
+      ]
+    }
+  ]
+}

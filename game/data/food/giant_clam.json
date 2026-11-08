@@ -1,0 +1,28 @@
+{
+	"id": "giant_clam",
+	"name": "Giant clam",
+	"kind": "hard",
+	"pieces": [
+		{
+			"id": "a13_giant_clam"
+		}
+	],
+	"length_m": 0.14,
+	"radius_m": 0.25,
+	"hp_mult": 2,
+	"xp": 2,
+	"xp_band_mult": [
+		1,
+		0.15,
+		0.05,
+		0.05
+	],
+	"respawn_s": 300,
+	"regen_s": 20,
+	"sfx": "crunch",
+	"fx_colors": [
+		"#EFE3C2",
+		"#A386CF",
+		"#C3AAE6"
+	]
+}

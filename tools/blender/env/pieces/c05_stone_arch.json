@@ -1,0 +1,38 @@
+{
+  "id": "c05_stone_arch",
+  "module": "bc_stone_arch",
+  "biome": "c",
+  "size_class": "env_medium",
+  "palette_row": 36,
+  "palette": {
+    "base": "#3E5C88",
+    "top": "#6F9FA6",
+    "top_alt": "#5F8F9C",
+    "side": "#34507E",
+    "side_alt": "#5A8A9A",
+    "under": "#1F2852",
+    "dark": "#181F44"
+  },
+  "params": {},
+  "variant_params": [
+    {},
+    {
+      "span": 8.0,
+      "spring": 6.0,
+      "rise": 4.0,
+      "thick": 3.0,
+      "depth": 3.5,
+      "blocks": 8,
+      "rubble": 2
+    }
+  ],
+  "seed": 5005,
+  "variants": 2,
+  "footprint_m": [
+    21.6,
+    19.5,
+    6.7
+  ],
+  "sway": false,
+  "glow": false
+}

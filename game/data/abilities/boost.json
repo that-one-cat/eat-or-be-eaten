@@ -1,0 +1,13 @@
+{
+	"id": "boost",
+	"name": "Boost",
+	"kind": "active",
+	"input_action": "boost",
+	"always_available": true,
+	"cooldown_s": 0,
+	"stamina_max": 100,
+	"stamina_drain_per_s": 25,
+	"stamina_regen_per_s": 15,
+	"restart_min_stamina_frac": 0.2,
+	"speed_mult": 1.8
+}

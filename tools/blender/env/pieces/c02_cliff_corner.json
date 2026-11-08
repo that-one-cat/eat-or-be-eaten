@@ -1,0 +1,30 @@
+{
+  "id": "c02_cliff_corner",
+  "module": "cliff",
+  "biome": "c",
+  "size_class": "env_large",
+  "palette_row": 35,
+  "palette": {
+    "base": "#4A6E92",
+    "top": "#77A5AC",
+    "top_alt": "#689AA4",
+    "side": "#3A5384",
+    "side_alt": "#5F8FA0",
+    "under": "#222B55",
+    "dark": "#1A2147",
+    "detail": "#CDB89E",
+    "detail_alt": "#BCA78F"
+  },
+  "params": {
+    "shape": "corner"
+  },
+  "seed": 1102,
+  "variants": 2,
+  "footprint_m": [
+    10.0,
+    32.0,
+    10.0
+  ],
+  "sway": false,
+  "glow": false
+}

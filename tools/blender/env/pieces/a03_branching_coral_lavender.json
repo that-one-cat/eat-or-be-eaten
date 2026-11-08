@@ -1,0 +1,78 @@
+{
+  "id": "a03_branching_coral_lavender",
+  "module": "a_coral_branch",
+  "biome": "a",
+  "size_class": "env_small",
+  "palette_row": 42,
+  "palette": {
+    "base": "#B497D8",
+    "top": "#D0BAEE",
+    "top_alt": "#C4ACE6",
+    "side": "#A88ACB",
+    "side_alt": "#C2A6E2",
+    "under": "#8A6EAE",
+    "dark": "#4E3A70",
+    "inner": "#6E5596",
+    "detail": "#C8B0E6",
+    "detail_alt": "#B39AD6",
+    "tip": "#DCCBF2",
+    "trim": "#9F83C6"
+  },
+  "params": {
+    "scheme": "lavender",
+    "axiom": "A",
+    "rules": {
+      "A": [
+        [
+          2,
+          "F[+A][-A]"
+        ],
+        [
+          1,
+          "F[+A][-A]A"
+        ]
+      ]
+    },
+    "iterations": 3,
+    "length": 0.3,
+    "len_decay": 0.85,
+    "angle": 40.0,
+    "tropism": 0.14,
+    "radius": 0.1,
+    "r_decay": 0.85,
+    "taper": 0.92,
+    "r_min": 0.06,
+    "sides": 5,
+    "tip_len": 0.35,
+    "flat": 0.6
+  },
+  "seed": 4003,
+  "variants": 3,
+  "footprint_m": [
+    1.0,
+    0.9,
+    0.5
+  ],
+  "sway": false,
+  "glow": false,
+  "variant_params": [
+    {},
+    {
+      "iterations": 2,
+      "length": 0.32
+    },
+    {
+      "length": 0.28,
+      "radius": 0.11,
+      "flat": 0.1,
+      "rules": {
+        "A": [
+          [
+            1,
+            "F[+A][-A]"
+          ]
+        ]
+      }
+    }
+  ]
+}

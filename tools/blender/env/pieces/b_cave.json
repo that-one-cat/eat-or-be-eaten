@@ -1,0 +1,38 @@
+{
+  "id": "b_cave",
+  "module": "bc_cave",
+  "biome": "b",
+  "size_class": "env_medium",
+  "palette_row": 61,
+  "palette": {
+    "base": "#4E7F7C",
+    "top": "#7FAE9E",
+    "top_alt": "#6FA092",
+    "side": "#3F6A6E",
+    "side_alt": "#4C7A7A",
+    "under": "#243E48",
+    "dark": "#1C3038",
+    "detail": "#6E9A4E",
+    "detail_alt": "#5D8743",
+    "trim": "#7A6A3E",
+    "trim_alt": "#665834"
+  },
+  "params": {},
+  "variant_params": [
+    {},
+    {
+      "closed_back": true,
+      "length": 9.0,
+      "segments": 2
+    }
+  ],
+  "seed": 5107,
+  "variants": 2,
+  "footprint_m": [
+    26.6,
+    19.4,
+    14.6
+  ],
+  "sway": false,
+  "glow": false
+}

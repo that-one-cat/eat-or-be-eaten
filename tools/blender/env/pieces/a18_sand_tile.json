@@ -1,0 +1,27 @@
+{
+  "id": "a18_sand_tile",
+  "module": "sand_tile",
+  "biome": "a",
+  "size_class": "env_small",
+  "palette_row": 32,
+  "palette": {
+    "base": "#E6D9AE",
+    "top": "#F0E6C4",
+    "top_alt": "#D8C89C",
+    "side": "#D3C597",
+    "side_alt": "#CBBC8E",
+    "under": "#B8A87C"
+  },
+  "params": {
+    "ripple_amp": 0.18
+  },
+  "seed": 1018,
+  "variants": 2,
+  "footprint_m": [
+    8.0,
+    0.6,
+    8.0
+  ],
+  "sway": false,
+  "glow": false
+}

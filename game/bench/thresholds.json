@@ -1,0 +1,32 @@
+{
+	"_doc": "S4 engine tripwires (tasks/stage-S4-living-ocean.md Acceptance, docs/GAME_DESIGN.md section 12). 'tripwires' fail the run (exit 2), 'validity' marks a run whose load is not the one the tripwire assumes, that is too short, or that ran on a busy machine (1-minute load average per CPU thread), or did not draw (exit 3). --no-gate reports both and exits 0.",
+	"sim": {
+		"tripwires": {
+			"tick_p95_ms": 8.0,
+			"rss_mb": 600.0,
+			"school_flocking_p95_ms": 3.0
+		},
+		"validity": {
+			"agents_min": 16,
+			"npc_fish_min": 900,
+			"eat_rate_per_min_min": 35.0,
+			"eat_rate_per_min_max": 70.0,
+			"ticks_measured_min": 1800,
+			"load_avg_per_thread_max": 1.0
+		}
+	},
+	"crowd": {
+		"tripwires": {
+			"frame_p95_ms": 16.7,
+			"school_flocking_p95_ms": 3.0
+		},
+		"validity": {
+			"npc_fish_min": 900,
+			"drawn_instances_min": 250,
+			"frame_p50_max_ms": 250.0,
+			"frames_measured_min": 3600,
+			"draw_calls_min": 10,
+			"load_avg_per_thread_max": 1.0
+		}
+	}
+}

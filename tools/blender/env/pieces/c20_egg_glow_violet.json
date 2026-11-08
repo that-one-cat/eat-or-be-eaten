@@ -1,0 +1,76 @@
+{
+  "id": "c20_egg_glow_violet",
+  "module": "egg_glow",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 38,
+  "palette": {
+    "base": "#2A3550",
+    "base_alt": "#222C45",
+    "top": "#34425F",
+    "top_alt": "#3E4E70",
+    "side": "#2A3550",
+    "side_alt": "#222C45",
+    "under": "#161D33",
+    "dark": "#0C1222",
+    "detail": "#C9B8F0",
+    "detail_alt": "#E2D8FA",
+    "tip": "#EFE8FB",
+    "accent": "#B56CFF",
+    "accent_alt": "#D3A8FF",
+    "inner": "#1A2440",
+    "trim": "#FF7FC8",
+    "trim_alt": "#E65AAE"
+  },
+  "params": {
+    "shape": "cluster",
+    "facets": 12,
+    "mound": [
+      20,
+      0.044,
+      0.11,
+      0.075
+    ],
+    "pink": [
+      1,
+      9
+    ],
+    "bead_tone": {
+      "top": "accent",
+      "side": [
+        "accent",
+        "detail"
+      ],
+      "under": "detail"
+    }
+  },
+  "variant_params": [
+    {},
+    {
+      "slab": [
+        0.2,
+        0.17,
+        0.035,
+        6
+      ],
+      "mound": [
+        19,
+        0.04,
+        0.1,
+        0.065
+      ],
+      "pink": [
+        5
+      ]
+    }
+  ],
+  "seed": 6108,
+  "variants": 2,
+  "footprint_m": [
+    0.46,
+    0.2,
+    0.38
+  ],
+  "sway": false,
+  "glow": true
+}

@@ -1,0 +1,30 @@
+{
+	"id": "egg_glow",
+	"name": "Glowing abyss eggs",
+	"kind": "soft",
+	"pieces": [
+		{
+			"id": "c19_egg_glow_cyan"
+		},
+		{
+			"id": "c20_egg_glow_violet"
+		}
+	],
+	"length_m": 0.04,
+	"radius_m": 0.12,
+	"swallow_ratio": 0.5,
+	"xp": 0.8,
+	"xp_band_mult": [
+		1,
+		0.15,
+		0.05,
+		0.05
+	],
+	"respawn_s": 180,
+	"sfx": "crunch",
+	"fx_colors": [
+		"#3FF0FF",
+		"#B56CFF",
+		"#8CF6FF"
+	]
+}

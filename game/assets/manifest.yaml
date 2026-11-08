@@ -1,0 +1,2934 @@
+# Asset provenance manifest (needed for Steam AI disclosure and licence audits).
+# One entry per shipped asset file. Keep it truthful: a missing/incomplete entry blocks the asset
+# in review. The headless validator (planned) checks required fields.
+#
+# Entry schema:
+#   - path: res://assets/models/sp_fusiform_grouper_s1_lod0.glb
+#     kind: model | texture | audio | font | icon
+#     source_kind: own_script | own_hand | cc0_pack | licensed_pack | ai_generated | ai_assisted | ai_tripo
+#     tool: ""              # e.g. blender-script, Meshy, Tripo, none
+#     model_version: ""     # AI tool/model version if any
+#     plan_tier: ""         # paid/free plan at generation time (commercial rights depend on it)
+#     prompt: ""            # prompt or spec file used
+#     input_hash: ""        # sha256 of the input image/sketch if any
+#     date: "YYYY-MM-DD"
+#     licence: ""           # SPDX-style id or licence name
+#     tos_url: ""           # ToS URL
+#     tos_snapshot: ""      # path to a saved snapshot of the ToS at generation time
+#     status: draft | reviewed | approved
+#     ai_disclosure: false  # true if player-facing AI content (Steam disclosure required)
+
+version: 1
+assets:
+  - path: res://assets/models/species/sp_fusiform_reef_fish_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/player_reef_fish.json
+    input_hash: "sha256:7ae70dc1c476534e4329ecaa55c2473c158c2920f5f9b5aa45e04977fdc6f619"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_ray_ray_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/sample_ray.json
+    input_hash: "sha256:d7c79092f10483154f22e083e486094b4ff4cc419e76cd21248761c2aeedc6c1"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_swarm_plankton_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/plankton.json
+    input_hash: "sha256:f3e63033214d6e7e9481272c9b2614f897ccc3af5bca11a2eaa5018766c3cc89"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_fusiform_silver_schooling_fish_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/silver_schooling_fish.json
+    input_hash: "sha256:8a99ee32292689481944b35ebe46003ad26731b55a312652c6778e3260042e7a"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_round_puffer_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/puffer.json
+    input_hash: "sha256:02871909e1869cd7a02dfd35f91a8ad86360ca0e0276a83cc4aab7416177e2c8"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_fusiform_barracuda_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/barracuda.json
+    input_hash: "sha256:5607755dc65745f7540ffdccf532bea15e4de395c0037683a7e685c00eb6325f"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_fusiform_grouper_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/grouper.json
+    input_hash: "sha256:460ecda7b973cb1e329f360d4ea86083b5eebabf34c19c70d3d28ab41a15f1c4"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_fusiform_shark_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/shark.json
+    input_hash: "sha256:89536c4981117c1ac79264f585f0ac0a87db17f19b86be6f6b3a60c22aee2c7d"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_fusiform_giant_shark_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/giant_shark.json
+    input_hash: "sha256:2ebf1f0030701f011eb853dc9feac8dd70f413f5936faf29e397ced63bb5da4b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_fusiform_reef_fish_s1_rig_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless; tools/blender/rig/make_rig.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/player_reef_fish.json  # + rig/clip constants in tools/blender/rig/make_rig.py
+    input_hash: "sha256:7ae70dc1c476534e4329ecaa55c2473c158c2920f5f9b5aa45e04977fdc6f619"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_fusiform_giant_shark_s1_rig_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless; tools/blender/rig/make_rig.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/giant_shark.json  # + rig/clip constants in tools/blender/rig/make_rig.py
+    input_hash: "sha256:2ebf1f0030701f011eb853dc9feac8dd70f413f5936faf29e397ced63bb5da4b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/textures/palette.png
+    kind: texture
+    source_kind: own_script
+    tool: blender-script (python stdlib PNG writer in tools/blender/palette_atlas.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/ + tools/blender/env/pieces/  # rows 0-31 species, 32-63 env; rebuilt by make_species.py and env/build_all.py
+    input_hash: ""
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a10_rock_stack_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a10_rock_stack.json
+    input_hash: "sha256:fd098b942613706d65025053c016f982919d91b46aa40c4633396b26732765ac"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a10_rock_stack_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a10_rock_stack.json
+    input_hash: "sha256:fd098b942613706d65025053c016f982919d91b46aa40c4633396b26732765ac"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a10_rock_stack_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a10_rock_stack.json
+    input_hash: "sha256:fd098b942613706d65025053c016f982919d91b46aa40c4633396b26732765ac"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a12_boulder_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a12_boulder.json
+    input_hash: "sha256:524319ed661997e2fae6d2a9ddffe29b378e2adb09014869abfb1dbbcdfc2424"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a12_boulder_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a12_boulder.json
+    input_hash: "sha256:524319ed661997e2fae6d2a9ddffe29b378e2adb09014869abfb1dbbcdfc2424"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a12_boulder_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a12_boulder.json
+    input_hash: "sha256:524319ed661997e2fae6d2a9ddffe29b378e2adb09014869abfb1dbbcdfc2424"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a12_pebbles_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a12_pebbles.json
+    input_hash: "sha256:45ac2cdb0b07211ba28431fdb642dfbd68e092e9e71a52b53d1fbbbc97f591de"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a12_pebbles_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a12_pebbles.json
+    input_hash: "sha256:45ac2cdb0b07211ba28431fdb642dfbd68e092e9e71a52b53d1fbbbc97f591de"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a12_pebbles_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a12_pebbles.json
+    input_hash: "sha256:45ac2cdb0b07211ba28431fdb642dfbd68e092e9e71a52b53d1fbbbc97f591de"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a18_sand_tile_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a18_sand_tile.json
+    input_hash: "sha256:64dd7bcdb41a798a656cb9166fdb07caf19013992bcf33309f50f2d27f636d26"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a18_sand_tile_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a18_sand_tile.json
+    input_hash: "sha256:64dd7bcdb41a798a656cb9166fdb07caf19013992bcf33309f50f2d27f636d26"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c01_cliff_wall_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c01_cliff_wall.json
+    input_hash: "sha256:a5002b5be1428fb261d451b3164ae736fe3bca9843921098989eb26d9562fe32"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c01_cliff_wall_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c01_cliff_wall.json
+    input_hash: "sha256:a5002b5be1428fb261d451b3164ae736fe3bca9843921098989eb26d9562fe32"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c02_cliff_corner_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c02_cliff_corner.json
+    input_hash: "sha256:067ea4f5faa96cec61281be81d1ea11e4ad2d846ff59e534543f588850fdff37"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c02_cliff_corner_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c02_cliff_corner.json
+    input_hash: "sha256:067ea4f5faa96cec61281be81d1ea11e4ad2d846ff59e534543f588850fdff37"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c03_cliff_ledge_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c03_cliff_ledge.json
+    input_hash: "sha256:fb25594cbc37436a93efd760c858ac913ce8a3637149bee17571082eb4ee66a1"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c03_cliff_ledge_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c03_cliff_ledge.json
+    input_hash: "sha256:fb25594cbc37436a93efd760c858ac913ce8a3637149bee17571082eb4ee66a1"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c04_cliff_overhang_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c04_cliff_overhang.json
+    input_hash: "sha256:e6ace03973fa15697e9667990e56758bffb3d4435ce1cfd22cac41b448df0c81"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c04_cliff_overhang_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c04_cliff_overhang.json
+    input_hash: "sha256:e6ace03973fa15697e9667990e56758bffb3d4435ce1cfd22cac41b448df0c81"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c06_rock_terraces_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c06_rock_terraces.json
+    input_hash: "sha256:29c1209af1cd2b74646a58af78296805e45083d738982d35ecea971603d91146"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c06_rock_terraces_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c06_rock_terraces.json
+    input_hash: "sha256:29c1209af1cd2b74646a58af78296805e45083d738982d35ecea971603d91146"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c08_abyss_boulder_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c08_abyss_boulder.json
+    input_hash: "sha256:0cca7c770648b725a51523d54937f15cfd7220c6c98983b4a4160f13d01084df"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c08_abyss_boulder_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c08_abyss_boulder.json
+    input_hash: "sha256:0cca7c770648b725a51523d54937f15cfd7220c6c98983b4a4160f13d01084df"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c08_abyss_boulder_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c08_abyss_boulder.json
+    input_hash: "sha256:0cca7c770648b725a51523d54937f15cfd7220c6c98983b4a4160f13d01084df"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c08_abyss_slab_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c08_abyss_slab.json
+    input_hash: "sha256:bfa8fd14f4a1c0c98da828cd3ec038dfaef7cf7178881b1092868816c4336a19"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c08_abyss_slab_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c08_abyss_slab.json
+    input_hash: "sha256:bfa8fd14f4a1c0c98da828cd3ec038dfaef7cf7178881b1092868816c4336a19"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a01_branching_coral_red_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a01_branching_coral_red.json
+    input_hash: "sha256:e44207d03178d68a452745ac2c237f96decc13b96f8cb8592f183b505290d19b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a01_branching_coral_red_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a01_branching_coral_red.json
+    input_hash: "sha256:e44207d03178d68a452745ac2c237f96decc13b96f8cb8592f183b505290d19b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a01_branching_coral_red_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a01_branching_coral_red.json
+    input_hash: "sha256:e44207d03178d68a452745ac2c237f96decc13b96f8cb8592f183b505290d19b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a02_fan_coral_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a02_fan_coral.json
+    input_hash: "sha256:864152d11bac6932d7b0d6d1684b8509f674366d63f82bea45e037cf2d328175"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a02_fan_coral_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a02_fan_coral.json
+    input_hash: "sha256:864152d11bac6932d7b0d6d1684b8509f674366d63f82bea45e037cf2d328175"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a02_fan_coral_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a02_fan_coral.json
+    input_hash: "sha256:864152d11bac6932d7b0d6d1684b8509f674366d63f82bea45e037cf2d328175"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a03_branching_coral_lavender_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a03_branching_coral_lavender.json
+    input_hash: "sha256:5acf4939a8cb65a465ec47697742fe909da62e17919df7949eb76e126a3a6b6f"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a03_branching_coral_lavender_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a03_branching_coral_lavender.json
+    input_hash: "sha256:5acf4939a8cb65a465ec47697742fe909da62e17919df7949eb76e126a3a6b6f"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a03_branching_coral_lavender_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a03_branching_coral_lavender.json
+    input_hash: "sha256:5acf4939a8cb65a465ec47697742fe909da62e17919df7949eb76e126a3a6b6f"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a04_table_coral_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a04_table_coral.json
+    input_hash: "sha256:1a5d6ae9d75db4846da1511a617a4d77a3d3463478187017a46e40c354b9c073"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a04_table_coral_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a04_table_coral.json
+    input_hash: "sha256:1a5d6ae9d75db4846da1511a617a4d77a3d3463478187017a46e40c354b9c073"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a04_table_coral_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a04_table_coral.json
+    input_hash: "sha256:1a5d6ae9d75db4846da1511a617a4d77a3d3463478187017a46e40c354b9c073"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a05_brain_coral_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a05_brain_coral.json
+    input_hash: "sha256:8d2a081e93ee922d8942b5e2f03fac27fbcaa6b432a654c37d72bc6c46285416"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a05_brain_coral_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a05_brain_coral.json
+    input_hash: "sha256:8d2a081e93ee922d8942b5e2f03fac27fbcaa6b432a654c37d72bc6c46285416"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a05_brain_coral_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a05_brain_coral.json
+    input_hash: "sha256:8d2a081e93ee922d8942b5e2f03fac27fbcaa6b432a654c37d72bc6c46285416"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a06_tube_sponge_orange_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a06_tube_sponge_orange.json
+    input_hash: "sha256:8802db629c728cf1cbc26ac087d195217492049a2f934200c2bc114790be7120"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a06_tube_sponge_orange_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a06_tube_sponge_orange.json
+    input_hash: "sha256:8802db629c728cf1cbc26ac087d195217492049a2f934200c2bc114790be7120"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a06_tube_sponge_orange_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a06_tube_sponge_orange.json
+    input_hash: "sha256:8802db629c728cf1cbc26ac087d195217492049a2f934200c2bc114790be7120"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a07_anemone_peach_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a07_anemone_peach.json
+    input_hash: "sha256:2c980da5d79939a4fbd3ef257f2d4913f052707a1d88ec77e4391996c765511c"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a07_anemone_peach_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a07_anemone_peach.json
+    input_hash: "sha256:2c980da5d79939a4fbd3ef257f2d4913f052707a1d88ec77e4391996c765511c"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a07_anemone_peach_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a07_anemone_peach.json
+    input_hash: "sha256:2c980da5d79939a4fbd3ef257f2d4913f052707a1d88ec77e4391996c765511c"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a08_barrel_sponge_lavender_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a08_barrel_sponge_lavender.json
+    input_hash: "sha256:784ecbdaa75a5547ee27b39de115bedb799451a19f13a9b71621c76eff4b97b4"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a08_barrel_sponge_lavender_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a08_barrel_sponge_lavender.json
+    input_hash: "sha256:784ecbdaa75a5547ee27b39de115bedb799451a19f13a9b71621c76eff4b97b4"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a08_barrel_sponge_lavender_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a08_barrel_sponge_lavender.json
+    input_hash: "sha256:784ecbdaa75a5547ee27b39de115bedb799451a19f13a9b71621c76eff4b97b4"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a09_seagrass_tuft_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a09_seagrass_tuft.json
+    input_hash: "sha256:13d4e4371d5079ffa7f402c1635fd2a9ba28697d3c18481e90bd925cbd3ea4ec"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a09_seagrass_tuft_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a09_seagrass_tuft.json
+    input_hash: "sha256:13d4e4371d5079ffa7f402c1635fd2a9ba28697d3c18481e90bd925cbd3ea4ec"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a09_seagrass_tuft_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a09_seagrass_tuft.json
+    input_hash: "sha256:13d4e4371d5079ffa7f402c1635fd2a9ba28697d3c18481e90bd925cbd3ea4ec"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a11_rock_shelf_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a11_rock_shelf.json
+    input_hash: "sha256:014feda779d60bc9955b08786140abfb7eaf948ea37d701e7b7e3cc884d9aff3"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a11_rock_shelf_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a11_rock_shelf.json
+    input_hash: "sha256:014feda779d60bc9955b08786140abfb7eaf948ea37d701e7b7e3cc884d9aff3"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a13_giant_clam_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a13_giant_clam.json
+    input_hash: "sha256:766b32b57e0f43fbf967b13a5e2964b988972de441168ddbecb167e641af3d86"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a13_giant_clam_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a13_giant_clam.json
+    input_hash: "sha256:766b32b57e0f43fbf967b13a5e2964b988972de441168ddbecb167e641af3d86"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a14_starfish_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a14_starfish.json
+    input_hash: "sha256:f4b30bcd1db44724d2f571a652cc625a3eeed44433738409213a6c390c19cb60"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a14_starfish_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a14_starfish.json
+    input_hash: "sha256:f4b30bcd1db44724d2f571a652cc625a3eeed44433738409213a6c390c19cb60"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a14_starfish_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a14_starfish.json
+    input_hash: "sha256:f4b30bcd1db44724d2f571a652cc625a3eeed44433738409213a6c390c19cb60"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a15_cone_shells_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a15_cone_shells.json
+    input_hash: "sha256:48d33fde233e7845407ae53c0b1ae96253185c3d1aeb34636959e38244390070"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a15_cone_shells_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a15_cone_shells.json
+    input_hash: "sha256:48d33fde233e7845407ae53c0b1ae96253185c3d1aeb34636959e38244390070"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a16_coral_on_rock_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a16_coral_on_rock.json
+    input_hash: "sha256:8ebde1ba1c06ea83b3f3c4c04938ebeeae24bb797e8fa9c49d0c1402f09036ef"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a16_coral_on_rock_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a16_coral_on_rock.json
+    input_hash: "sha256:8ebde1ba1c06ea83b3f3c4c04938ebeeae24bb797e8fa9c49d0c1402f09036ef"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a17_tube_sponge_yellow_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a17_tube_sponge_yellow.json
+    input_hash: "sha256:859d3e513a48c0cd41a307fd96faee25cefbe68b040eed24b66ecb38d489365a"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a17_tube_sponge_yellow_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a17_tube_sponge_yellow.json
+    input_hash: "sha256:859d3e513a48c0cd41a307fd96faee25cefbe68b040eed24b66ecb38d489365a"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a17_tube_sponge_yellow_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a17_tube_sponge_yellow.json
+    input_hash: "sha256:859d3e513a48c0cd41a307fd96faee25cefbe68b040eed24b66ecb38d489365a"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a19_pillar_coral_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a19_pillar_coral.json
+    input_hash: "sha256:876a497bd7ca103b63610c1e686eaaac95e7af8c589c5fcea5b9c647e7a1e17a"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a19_pillar_coral_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a19_pillar_coral.json
+    input_hash: "sha256:876a497bd7ca103b63610c1e686eaaac95e7af8c589c5fcea5b9c647e7a1e17a"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a19_pillar_coral_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a19_pillar_coral.json
+    input_hash: "sha256:876a497bd7ca103b63610c1e686eaaac95e7af8c589c5fcea5b9c647e7a1e17a"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a20_reef_clump_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a20_reef_clump.json
+    input_hash: "sha256:56a77fa38201c4a4c13450e00ee53e360ee78ca5e36ae3b4c7e48d5327d281a4"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a20_reef_clump_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a20_reef_clump.json
+    input_hash: "sha256:56a77fa38201c4a4c13450e00ee53e360ee78ca5e36ae3b4c7e48d5327d281a4"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a20_reef_clump_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a20_reef_clump.json
+    input_hash: "sha256:56a77fa38201c4a4c13450e00ee53e360ee78ca5e36ae3b4c7e48d5327d281a4"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_anchor_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_anchor.json
+    input_hash: "sha256:80312b7e252d38939d3550ae770d6ef011422160c77154060e66475881b9933f"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_arch_natural_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_arch_natural.json
+    input_hash: "sha256:0df762fb7c647c0744e383b0eab269060212dd88afed95a0948cf20856c27306"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_arch_natural_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_arch_natural.json
+    input_hash: "sha256:0df762fb7c647c0744e383b0eab269060212dd88afed95a0948cf20856c27306"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_boat_wreck_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_boat_wreck.json
+    input_hash: "sha256:c190558aa210bf514f536bf2aa9a6403942786c6b686a1b847849024c31320ae"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_cave_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_cave.json
+    input_hash: "sha256:f0fc9792ab62ce9064269bafe000f8b55cac742977019c9faee1ed2118ae67f6"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_cave_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_cave.json
+    input_hash: "sha256:f0fc9792ab62ce9064269bafe000f8b55cac742977019c9faee1ed2118ae67f6"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_crate_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_crate.json
+    input_hash: "sha256:d17b1e88a6c76b1dd873e088c7dcf4b45486bc3bfe267ed71307532138bf208f"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_crate_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_crate.json
+    input_hash: "sha256:d17b1e88a6c76b1dd873e088c7dcf4b45486bc3bfe267ed71307532138bf208f"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_crate_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_crate.json
+    input_hash: "sha256:d17b1e88a6c76b1dd873e088c7dcf4b45486bc3bfe267ed71307532138bf208f"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_holdfast_rock_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_holdfast_rock.json
+    input_hash: "sha256:b38de51433f9c1b2a3b8d7b156f9b5b1ef39ebdcdae1ef41b33b5cc791e36722"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_holdfast_rock_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_holdfast_rock.json
+    input_hash: "sha256:b38de51433f9c1b2a3b8d7b156f9b5b1ef39ebdcdae1ef41b33b5cc791e36722"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_kelp_mid_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_kelp_mid.json
+    input_hash: "sha256:ee1516d47a8211b2b0a9330f00a88caf961079b36fbdaddf79f49810064ecfc8"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_kelp_mid_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_kelp_mid.json
+    input_hash: "sha256:ee1516d47a8211b2b0a9330f00a88caf961079b36fbdaddf79f49810064ecfc8"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_kelp_mid_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_kelp_mid.json
+    input_hash: "sha256:ee1516d47a8211b2b0a9330f00a88caf961079b36fbdaddf79f49810064ecfc8"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_kelp_short_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_kelp_short.json
+    input_hash: "sha256:09582f9f90ca11cfc898ad0ace2bec56a2539ee32029884311eeb781e736f0ae"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_kelp_short_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_kelp_short.json
+    input_hash: "sha256:09582f9f90ca11cfc898ad0ace2bec56a2539ee32029884311eeb781e736f0ae"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_kelp_short_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_kelp_short.json
+    input_hash: "sha256:09582f9f90ca11cfc898ad0ace2bec56a2539ee32029884311eeb781e736f0ae"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_kelp_tall_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_kelp_tall.json
+    input_hash: "sha256:edf80132c0f12242afee60696ad5853ab28cb05c346547eab2b8a43c5741249f"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_kelp_tall_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_kelp_tall.json
+    input_hash: "sha256:edf80132c0f12242afee60696ad5853ab28cb05c346547eab2b8a43c5741249f"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_kelp_tall_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_kelp_tall.json
+    input_hash: "sha256:edf80132c0f12242afee60696ad5853ab28cb05c346547eab2b8a43c5741249f"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_mossy_rock_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_mossy_rock.json
+    input_hash: "sha256:bf2ba6afbbea223d8219c0746d12a52b591724981d966c608d76f0194eb7f15c"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_mossy_rock_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_mossy_rock.json
+    input_hash: "sha256:bf2ba6afbbea223d8219c0746d12a52b591724981d966c608d76f0194eb7f15c"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_mossy_rock_v3_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_mossy_rock.json
+    input_hash: "sha256:bf2ba6afbbea223d8219c0746d12a52b591724981d966c608d76f0194eb7f15c"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_net_torn_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_net_torn.json
+    input_hash: "sha256:56ba89d67062d6a8807c191b870417eee55f2906d8a1a515c48d694f4730208b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_net_torn_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_net_torn.json
+    input_hash: "sha256:56ba89d67062d6a8807c191b870417eee55f2906d8a1a515c48d694f4730208b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c05_stone_arch_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c05_stone_arch.json
+    input_hash: "sha256:5b4a9947a25bd2fc3fb8f9b96bb9259e2a7619c137ef5e9d29570391e043e64b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c05_stone_arch_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c05_stone_arch.json
+    input_hash: "sha256:5b4a9947a25bd2fc3fb8f9b96bb9259e2a7619c137ef5e9d29570391e043e64b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c07_rock_pillar_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c07_rock_pillar.json
+    input_hash: "sha256:c2b6a26846a66e485f3a96998f94b0825a9798acd825a0b0cafca3f3504da45c"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c07_rock_pillar_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c07_rock_pillar.json
+    input_hash: "sha256:c2b6a26846a66e485f3a96998f94b0825a9798acd825a0b0cafca3f3504da45c"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c08_abyss_floor_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c08_abyss_floor.json
+    input_hash: "sha256:f1c339b93fa6d1c172e5e8061f613502a85145eff41919e25d9f149c8d76187a"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c08_abyss_floor_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c08_abyss_floor.json
+    input_hash: "sha256:f1c339b93fa6d1c172e5e8061f613502a85145eff41919e25d9f149c8d76187a"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c09_crack_slab_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c09_crack_slab.json
+    input_hash: "sha256:50f04a25c4a40e4e97ad09561a69c926cc26cc810c62d3b09ac8967899ffc438"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c09_crack_slab_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c09_crack_slab.json
+    input_hash: "sha256:50f04a25c4a40e4e97ad09561a69c926cc26cc810c62d3b09ac8967899ffc438"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c10_tube_coral_teal_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c10_tube_coral_teal.json
+    input_hash: "sha256:8951eb536fd0114188c9ffb44f7d0c9e78f710bb9542fd4cb3fcbd0c4881b83d"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c10_tube_coral_teal_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c10_tube_coral_teal.json
+    input_hash: "sha256:8951eb536fd0114188c9ffb44f7d0c9e78f710bb9542fd4cb3fcbd0c4881b83d"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c11_tube_coral_violet_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c11_tube_coral_violet.json
+    input_hash: "sha256:e8711a7705da39c2583747c53fbec7e08cef7fe9be9994d070540548e63588bb"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c11_tube_coral_violet_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c11_tube_coral_violet.json
+    input_hash: "sha256:e8711a7705da39c2583747c53fbec7e08cef7fe9be9994d070540548e63588bb"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c12_dome_coral_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c12_dome_coral.json
+    input_hash: "sha256:65ca4de0e3d276fa3f4f25e83064a768511b608bca93a36049394ef5298a0b88"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c12_dome_coral_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c12_dome_coral.json
+    input_hash: "sha256:65ca4de0e3d276fa3f4f25e83064a768511b608bca93a36049394ef5298a0b88"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c13_tube_worm_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c13_tube_worm.json
+    input_hash: "sha256:c748067c186a24cb47662ef449495fd9d5054a3f6b07894673f1b1fd92b373dc"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c13_tube_worm_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c13_tube_worm.json
+    input_hash: "sha256:c748067c186a24cb47662ef449495fd9d5054a3f6b07894673f1b1fd92b373dc"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c14_anemone_glow_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c14_anemone_glow.json
+    input_hash: "sha256:d3c8e104cc58458419842a423ccd03797e5ec901d88782a2edc4d29d005f62c8"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c14_anemone_glow_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c14_anemone_glow.json
+    input_hash: "sha256:d3c8e104cc58458419842a423ccd03797e5ec901d88782a2edc4d29d005f62c8"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c15_frond_glow_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c15_frond_glow.json
+    input_hash: "sha256:6c8ce34fe5a63e8ea44ab7658a74058c1e668a6c7341a04c8fdf90c5b8383585"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c15_frond_glow_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c15_frond_glow.json
+    input_hash: "sha256:6c8ce34fe5a63e8ea44ab7658a74058c1e668a6c7341a04c8fdf90c5b8383585"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c16_tube_sponge_dark_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c16_tube_sponge_dark.json
+    input_hash: "sha256:322558f60537f143dba870fc28f6d086a9949f6fcd5c8494ffc07e65ebf16d33"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c16_tube_sponge_dark_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c16_tube_sponge_dark.json
+    input_hash: "sha256:322558f60537f143dba870fc28f6d086a9949f6fcd5c8494ffc07e65ebf16d33"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c17_bubble_coral_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c17_bubble_coral.json
+    input_hash: "sha256:3885e4bdbb7db7116afc40530867069d4bcdb74563dbfdb1791e40d75ebf8f1b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c17_bubble_coral_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c17_bubble_coral.json
+    input_hash: "sha256:3885e4bdbb7db7116afc40530867069d4bcdb74563dbfdb1791e40d75ebf8f1b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c18_fan_coral_dark_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c18_fan_coral_dark.json
+    input_hash: "sha256:36bad4a3fe16d702b841c40ea5f1f7acc89c7988f1c26f3ff426d76bd6e1258b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c18_fan_coral_dark_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c18_fan_coral_dark.json
+    input_hash: "sha256:36bad4a3fe16d702b841c40ea5f1f7acc89c7988f1c26f3ff426d76bd6e1258b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/music/ambience_reef.ogg
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab), ffmpeg loudnorm/libvorbis
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/ambience.py
+    input_hash: "sha256:0d657b3ad44490c17040ee526a1d63b62b5cebe8c7846b8ac05c108a743e5134"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/music/reef_boss_v1.ogg
+    kind: audio
+    source_kind: own_script
+    tool: fluidsynth 2.6 + GeneralUser GS 2.0 (score -> MIDI), ffmpeg loudnorm/libvorbis
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/scores/reef_boss.json
+    input_hash: "sha256:3a2dc75533c4be32d4879e6f35f2cf2a8b1afdd150552004f99940926866b338"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work); rendered with the GeneralUser GS SoundFont (free for commercial music)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/music/reef_theme_v1.ogg
+    kind: audio
+    source_kind: own_script
+    tool: fluidsynth 2.6 + GeneralUser GS 2.0 (score -> MIDI), ffmpeg loudnorm/libvorbis
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/scores/reef_theme.json
+    input_hash: "sha256:fd476961300295da607a14158d5199ea545715b040269348b24b8ce8e275e649"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work); rendered with the GeneralUser GS SoundFont (free for commercial music)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/band_up/band_up_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/band_up/band_up_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/band_up/band_up_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bite_big/bite_big_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bite_big/bite_big_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bite_big/bite_big_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bite_small/bite_small_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bite_small/bite_small_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bite_small/bite_small_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/boost/boost_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/boost/boost_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/boost/boost_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/boss_dash/boss_dash_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/boss_dash/boss_dash_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/boss_dash/boss_dash_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/boss_tell/boss_tell_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/boss_tell/boss_tell_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/boss_tell/boss_tell_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bubbles/bubbles_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bubbles/bubbles_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bubbles/bubbles_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/kill/kill_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/kill/kill_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/kill/kill_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/sonar/sonar_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/sonar/sonar_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/sonar/sonar_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/swallow/swallow_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/swallow/swallow_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/swallow/swallow_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/ui_click/ui_click_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/ui_click/ui_click_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/ui_click/ui_click_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/ui_hover/ui_hover_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/ui_hover/ui_hover_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:fa9ccc2081be80705361d17adad878d91d1d2b85b047eb596c561168cf750b0f"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bite_miss/bite_miss_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:3cb0128abb947062ee3c7359f1bd9cc0be5443ccda14cd27991a7c1d2c3e0db8"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bite_miss/bite_miss_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:3cb0128abb947062ee3c7359f1bd9cc0be5443ccda14cd27991a7c1d2c3e0db8"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/bite_miss/bite_miss_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:3cb0128abb947062ee3c7359f1bd9cc0be5443ccda14cd27991a7c1d2c3e0db8"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a21_egg_roe_mound_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a21_egg_roe_mound.json
+    input_hash: "sha256:ba76fc38d98f6469daf6ddb26ce27316a7eeb266756e998e698f4c682b048613"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a21_egg_roe_mound_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a21_egg_roe_mound.json
+    input_hash: "sha256:ba76fc38d98f6469daf6ddb26ce27316a7eeb266756e998e698f4c682b048613"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a22_egg_roe_ring_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a22_egg_roe_ring.json
+    input_hash: "sha256:dbbf37856e68daccbcfc7d14f305db20986871828e86f4170c68817adc7e84d3"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a22_egg_roe_ring_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a22_egg_roe_ring.json
+    input_hash: "sha256:dbbf37856e68daccbcfc7d14f305db20986871828e86f4170c68817adc7e84d3"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a23_snail_orange_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a23_snail_orange.json
+    input_hash: "sha256:3e8de3881cbc320009a9f14415d1c5344191111001453a0e46d15c5eb34ee210"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_a23_snail_orange_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/a23_snail_orange.json
+    input_hash: "sha256:3e8de3881cbc320009a9f14415d1c5344191111001453a0e46d15c5eb34ee210"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_egg_capsules_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_egg_capsules.json
+    input_hash: "sha256:5ceaf4fc35730fc932f4b35b021ee1fd08d6c169c6302cd32733d3045b124461"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_egg_capsules_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_egg_capsules.json
+    input_hash: "sha256:5ceaf4fc35730fc932f4b35b021ee1fd08d6c169c6302cd32733d3045b124461"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_egg_lavender_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_egg_lavender.json
+    input_hash: "sha256:0f9066beff16cf4cf74994d3942c5416cbb2419dbb3dae968cbb98547049bef8"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_egg_lavender_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_egg_lavender.json
+    input_hash: "sha256:0f9066beff16cf4cf74994d3942c5416cbb2419dbb3dae968cbb98547049bef8"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_egg_pearls_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_egg_pearls.json
+    input_hash: "sha256:b91bcb861ec61911e8bd9cbd37668165df4e27f5e807163a02c6220ebc1ae516"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_egg_pearls_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_egg_pearls.json
+    input_hash: "sha256:b91bcb861ec61911e8bd9cbd37668165df4e27f5e807163a02c6220ebc1ae516"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_egg_ribbon_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_egg_ribbon.json
+    input_hash: "sha256:05d4cafe3c7c0c807af69349c2e6ab1b8960979693ab9aa1c0f15561aa19cedd"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_b_egg_ribbon_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/b_egg_ribbon.json
+    input_hash: "sha256:05d4cafe3c7c0c807af69349c2e6ab1b8960979693ab9aa1c0f15561aa19cedd"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c19_egg_glow_cyan_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c19_egg_glow_cyan.json
+    input_hash: "sha256:b8ff36e09cc2d96e96233802b567acc67ae7d3d26aae89132699d1f5d4e87341"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c19_egg_glow_cyan_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c19_egg_glow_cyan.json
+    input_hash: "sha256:b8ff36e09cc2d96e96233802b567acc67ae7d3d26aae89132699d1f5d4e87341"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c20_egg_glow_violet_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c20_egg_glow_violet.json
+    input_hash: "sha256:abcb126d9f44267e7a497827a83197c432ed2f058378a2d5e80ad126ba3e7eb0"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c20_egg_glow_violet_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c20_egg_glow_violet.json
+    input_hash: "sha256:abcb126d9f44267e7a497827a83197c432ed2f058378a2d5e80ad126ba3e7eb0"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c21_snail_cyan_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c21_snail_cyan.json
+    input_hash: "sha256:53e39ff3813f9e0b9ffa6ab02a831b6c4cb65d939feedc05b84a8730b603660b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c21_snail_cyan_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c21_snail_cyan.json
+    input_hash: "sha256:53e39ff3813f9e0b9ffa6ab02a831b6c4cb65d939feedc05b84a8730b603660b"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c22_snail_violet_v1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c22_snail_violet.json
+    input_hash: "sha256:a0a1a2d34dfc5b7929840cde496a1d0987eae4401f2bfe262580018d5fc2e872"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/env/env_c22_snail_violet_v2_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless, tools/blender/env/build_all.py)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/env/pieces/c22_snail_violet.json
+    input_hash: "sha256:a0a1a2d34dfc5b7929840cde496a1d0987eae4401f2bfe262580018d5fc2e872"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_swarm_krill_shallows_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/krill_shallows.json
+    input_hash: "sha256:84b06c051dc379ec09fefbc1219023341044775bfb653eecd1d6b5937f74c376"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_swarm_krill_open_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/krill_open.json
+    input_hash: "sha256:b1fc13c1c34af2d52571bf156c3304f87da1b07572ac52281caaf551d3fb3e10"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/models/species/sp_swarm_krill_abyss_s1_lod0.glb
+    kind: model
+    source_kind: own_script
+    tool: blender-script (Blender 5.2.3 LTS, headless)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/blender/species/krill_abyss.json
+    input_hash: "sha256:fd0f4e44c81152a32f0437d08848080218219300f3209b5b2fe6d4d430391a90"  # spec file
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/crunch/crunch_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:c83cc5ca3c640862fcf4a6c63f2a338d050dd2e15fb8fcfe6f69939f5f2ea6c6"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/crunch/crunch_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:c83cc5ca3c640862fcf4a6c63f2a338d050dd2e15fb8fcfe6f69939f5f2ea6c6"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/crunch/crunch_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:c83cc5ca3c640862fcf4a6c63f2a338d050dd2e15fb8fcfe6f69939f5f2ea6c6"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/gulp/gulp_v1.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:c83cc5ca3c640862fcf4a6c63f2a338d050dd2e15fb8fcfe6f69939f5f2ea6c6"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/gulp/gulp_v2.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:c83cc5ca3c640862fcf4a6c63f2a338d050dd2e15fb8fcfe6f69939f5f2ea6c6"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false
+  - path: res://assets/audio/sfx/gulp/gulp_v3.wav
+    kind: audio
+    source_kind: own_script
+    tool: numpy sfxr-style synth (tools/audio, from audio-lab)
+    model_version: ""
+    plan_tier: ""
+    prompt: tools/audio/presets_fish.py
+    input_hash: "sha256:c83cc5ca3c640862fcf4a6c63f2a338d050dd2e15fb8fcfe6f69939f5f2ea6c6"  # generator input at creation
+    date: "2026-11-04"
+    licence: proprietary (own work)
+    tos_url: ""
+    tos_snapshot: ""
+    status: draft
+    ai_disclosure: false

@@ -1,0 +1,43 @@
+{
+  "id": "c04_cliff_overhang",
+  "module": "cliff",
+  "biome": "c",
+  "size_class": "env_medium",
+  "palette_row": 35,
+  "palette": {
+    "base": "#4A6E92",
+    "top": "#77A5AC",
+    "top_alt": "#689AA4",
+    "side": "#3A5384",
+    "side_alt": "#5F8FA0",
+    "under": "#222B55",
+    "dark": "#1A2147",
+    "detail": "#CDB89E",
+    "detail_alt": "#BCA78F"
+  },
+  "params": {
+    "shape": "overhang",
+    "cap": "sand"
+  },
+  "seed": 1104,
+  "variants": 2,
+  "footprint_m": [
+    8.0,
+    10.0,
+    20.0
+  ],
+  "sway": false,
+  "glow": false,
+  "variant_params": [
+    {},
+    {
+      "arm_length": 12.0,
+      "arm_width": 6.0,
+      "base_size": [
+        5.0,
+        4.5,
+        5.0
+      ]
+    }
+  ]
+}

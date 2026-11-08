@@ -1,0 +1,62 @@
+{
+  "id": "a15_cone_shells",
+  "module": "a_shells",
+  "biome": "a",
+  "size_class": "env_small",
+  "palette_row": 42,
+  "palette": {
+    "base": "#B497D8",
+    "top": "#D0BAEE",
+    "top_alt": "#C4ACE6",
+    "side": "#A88ACB",
+    "side_alt": "#C2A6E2",
+    "under": "#8A6EAE",
+    "dark": "#4E3A70",
+    "inner": "#6E5596",
+    "detail": "#C8B0E6",
+    "detail_alt": "#B39AD6",
+    "tip": "#DCCBF2",
+    "trim": "#9F83C6"
+  },
+  "params": {},
+  "seed": 4015,
+  "variants": 2,
+  "footprint_m": [
+    0.9,
+    0.4,
+    0.6
+  ],
+  "sway": false,
+  "glow": false,
+  "variant_params": [
+    {},
+    {
+      "shells": [
+        [
+          0.0,
+          0.0,
+          0.13,
+          0.32,
+          1,
+          -10.0
+        ],
+        [
+          0.28,
+          0.1,
+          0.1,
+          0.24,
+          0,
+          0.0
+        ],
+        [
+          -0.22,
+          0.16,
+          0.08,
+          0.18,
+          0,
+          0.0
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "a19_pillar_coral",
+  "module": "a_pillar_coral",
+  "biome": "a",
+  "size_class": "env_medium",
+  "palette_row": 45,
+  "palette": {
+    "base": "#F5A47E",
+    "top": "#FBC79A",
+    "side": "#F3B088",
+    "side_alt": "#EE9A74",
+    "tip": "#FCE0A8",
+    "detail": "#F2D9A6",
+    "detail_alt": "#E6C690",
+    "dark": "#A3474F",
+    "under": "#8A3A44",
+    "trim": "#EBC39C",
+    "trim_alt": "#DDAE86",
+    "inner": "#B78A68"
+  },
+  "params": {},
+  "seed": 4019,
+  "variants": 3,
+  "footprint_m": [
+    1.1,
+    2.4,
+    0.9
+  ],
+  "sway": false,
+  "glow": false,
+  "variant_params": [
+    {},
+    {
+      "count": 7,
+      "height": [
+        0.6,
+        1.6
+      ],
+      "mound": 0.6,
+      "spread": 0.42
+    },
+    {
+      "count": 3,
+      "height": [
+        1.4,
+        2.8
+      ],
+      "radius": [
+        0.16,
+        0.22
+      ]
+    }
+  ]
+}

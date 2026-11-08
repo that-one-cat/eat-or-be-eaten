@@ -1,0 +1,109 @@
+{
+  "id": "a16_coral_on_rock",
+  "module": "a_reef_clump",
+  "biome": "a",
+  "size_class": "env_medium",
+  "palette_row": 49,
+  "palette": {
+    "base": "#5FC2B4",
+    "base_alt": "#EE8A3C",
+    "top": "#C9A48E",
+    "top_alt": "#B8927E",
+    "side": "#94706A",
+    "side_alt": "#3E9187",
+    "under": "#6E5257",
+    "dark": "#A3474F",
+    "detail": "#E0705E",
+    "detail_alt": "#C9574E",
+    "tip": "#F5A47E",
+    "inner": "#B497D8",
+    "trim": "#EE9A9C",
+    "trim_alt": "#F9C0B6"
+  },
+  "params": {
+    "rocks": [
+      [
+        0.0,
+        0.0,
+        0.85,
+        0.7,
+        0.75
+      ]
+    ]
+  },
+  "seed": 4016,
+  "variants": 2,
+  "footprint_m": [
+    1.8,
+    1.4,
+    1.6
+  ],
+  "sway": true,
+  "glow": false,
+  "variant_params": [
+    {
+      "items": [
+        [
+          "table",
+          -0.1,
+          0.05,
+          0.6,
+          0.0,
+          1
+        ],
+        [
+          "branch_red",
+          0.45,
+          0.15,
+          0.55,
+          20.0,
+          1
+        ],
+        [
+          "anemone",
+          -0.75,
+          -0.55,
+          0.9,
+          0.0,
+          0
+        ]
+      ]
+    },
+    {
+      "items": [
+        [
+          "brain",
+          0.0,
+          0.1,
+          0.55,
+          0.0,
+          1
+        ],
+        [
+          "branch_lav",
+          0.5,
+          -0.3,
+          0.7,
+          0.0,
+          1
+        ],
+        [
+          "barrels",
+          -0.8,
+          -0.45,
+          0.6,
+          30.0,
+          0
+        ],
+        [
+          "anemone",
+          0.75,
+          -0.6,
+          0.7,
+          0.0,
+          0
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "b_mossy_rock",
+  "module": "bc_rock",
+  "biome": "b",
+  "size_class": "env_small",
+  "palette_row": 61,
+  "palette": {
+    "base": "#4E7F7C",
+    "top": "#7FAE9E",
+    "top_alt": "#6FA092",
+    "side": "#3F6A6E",
+    "side_alt": "#4C7A7A",
+    "under": "#243E48",
+    "dark": "#1C3038",
+    "detail": "#6E9A4E",
+    "detail_alt": "#5D8743",
+    "trim": "#7A6A3E",
+    "trim_alt": "#665834"
+  },
+  "params": {},
+  "variant_params": [
+    {},
+    {
+      "radii": [
+        2.2,
+        1.4,
+        1.8
+      ],
+      "points": 22,
+      "companions": 1
+    },
+    {
+      "radii": [
+        0.6,
+        0.45,
+        0.55
+      ],
+      "points": 14
+    }
+  ],
+  "seed": 5105,
+  "variants": 3,
+  "footprint_m": [
+    1.8,
+    1.2,
+    2.0
+  ],
+  "sway": false,
+  "glow": false
+}

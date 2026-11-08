@@ -1,0 +1,61 @@
+{
+  "id": "a22_egg_roe_ring",
+  "module": "egg_roe",
+  "biome": "a",
+  "size_class": "env_small",
+  "palette_row": 34,
+  "palette": {
+    "base": "#F4A261",
+    "base_alt": "#F8C08A",
+    "top": "#FFD3A5",
+    "top_alt": "#FFE4C8",
+    "side": "#F28CA0",
+    "side_alt": "#F7B0BE",
+    "under": "#C77D4E",
+    "dark": "#8A4B3A",
+    "detail": "#CFEFE3",
+    "detail_alt": "#9ED9CF",
+    "tip": "#F6F1E4",
+    "accent": "#FFF8E7",
+    "accent_alt": "#D9C7F2",
+    "inner": "#B79BE0",
+    "trim": "#BFE6EA",
+    "trim_alt": "#8CCBD6"
+  },
+  "params": {
+    "shape": "ring"
+  },
+  "variant_params": [
+    {},
+    {
+      "tiers": [
+        [
+          0.13,
+          14,
+          0.033,
+          0.0
+        ],
+        [
+          0.095,
+          9,
+          0.03,
+          0.042
+        ]
+      ],
+      "stub": [
+        0.075,
+        0.05,
+        6
+      ]
+    }
+  ],
+  "seed": 6102,
+  "variants": 2,
+  "footprint_m": [
+    0.3,
+    0.13,
+    0.3
+  ],
+  "sway": false,
+  "glow": false
+}

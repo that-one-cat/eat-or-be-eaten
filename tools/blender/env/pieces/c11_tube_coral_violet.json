@@ -1,0 +1,49 @@
+{
+  "id": "c11_tube_coral_violet",
+  "module": "bc_tube_cluster",
+  "biome": "c",
+  "size_class": "env_medium",
+  "palette_row": 52,
+  "palette": {
+    "base": "#8A5CE0",
+    "base_alt": "#7A4ED0",
+    "side": "#6A42B8",
+    "side_alt": "#5C38A4",
+    "under": "#241A3E",
+    "dark": "#161028",
+    "inner": "#4A2C8C",
+    "accent": "#D890FF"
+  },
+  "params": {
+    "count": 5,
+    "short": 4,
+    "base": true,
+    "radius": [
+      0.2,
+      0.3
+    ],
+    "height": [
+      1.1,
+      2.0
+    ],
+    "spread": 0.55,
+    "mouth_jitter": 0.12,
+    "lean": 18.0
+  },
+  "variant_params": [
+    {},
+    {
+      "count": 4,
+      "short": 3
+    }
+  ],
+  "seed": 5011,
+  "variants": 2,
+  "footprint_m": [
+    2.3,
+    1.8,
+    2.1
+  ],
+  "sway": false,
+  "glow": true
+}

@@ -1,0 +1,52 @@
+{
+  "id": "c08_abyss_boulder",
+  "module": "boulder",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 36,
+  "palette": {
+    "base": "#3E5C88",
+    "top": "#6F9FA6",
+    "top_alt": "#5F8F9C",
+    "side": "#34507E",
+    "side_alt": "#5A8A9A",
+    "under": "#1F2852",
+    "dark": "#181F44"
+  },
+  "params": {},
+  "seed": 1108,
+  "variants": 3,
+  "footprint_m": [
+    3.0,
+    2.2,
+    2.6
+  ],
+  "sway": false,
+  "glow": false,
+  "variant_params": [
+    {
+      "radii": [
+        1.4,
+        1.1,
+        1.3
+      ],
+      "points": 22
+    },
+    {
+      "radii": [
+        2.4,
+        1.8,
+        2.1
+      ],
+      "points": 28
+    },
+    {
+      "radii": [
+        0.6,
+        0.45,
+        0.55
+      ],
+      "points": 16
+    }
+  ]
+}

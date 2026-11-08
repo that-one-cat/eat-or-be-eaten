@@ -1,0 +1,52 @@
+{
+  "id": "c12_dome_coral",
+  "module": "bc_dome_coral",
+  "biome": "c",
+  "size_class": "env_medium",
+  "palette_row": 53,
+  "palette": {
+    "base": "#5A3F9A",
+    "top": "#7A4FC4",
+    "top_alt": "#6C45B2",
+    "side": "#2C5A6E",
+    "side_alt": "#24485E",
+    "under": "#1A2A44",
+    "detail": "#3FAE6A",
+    "detail_alt": "#8E50C8",
+    "accent": "#80FF90",
+    "accent_alt": "#D070FF"
+  },
+  "params": {
+    "radii": [
+      1.1,
+      0.8,
+      1.0
+    ],
+    "bump_radius": [
+      0.12,
+      0.2
+    ],
+    "bumps": 28,
+    "bump_height": 0.1
+  },
+  "variant_params": [
+    {},
+    {
+      "radii": [
+        0.8,
+        0.55,
+        0.75
+      ],
+      "bumps": 20
+    }
+  ],
+  "seed": 5012,
+  "variants": 2,
+  "footprint_m": [
+    2.3,
+    0.9,
+    2.1
+  ],
+  "sway": false,
+  "glow": true
+}

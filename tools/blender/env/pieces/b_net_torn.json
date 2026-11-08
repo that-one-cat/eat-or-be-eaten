@@ -1,0 +1,53 @@
+{
+  "id": "b_net_torn",
+  "module": "bc_net",
+  "biome": "b",
+  "size_class": "env_small",
+  "palette_row": 63,
+  "palette": {
+    "base": "#7A4A3A",
+    "base_alt": "#8C5844",
+    "top": "#A0684C",
+    "side": "#6A4034",
+    "under": "#3E2A28",
+    "detail": "#C2AE84",
+    "detail_alt": "#A8946C",
+    "trim": "#D9783A",
+    "trim_alt": "#B89A6A"
+  },
+  "params": {},
+  "variant_params": [
+    {},
+    {
+      "size": [
+        2.6,
+        2.2
+      ],
+      "cells": [
+        6,
+        5
+      ],
+      "heap": 1.0,
+      "heap_at": [
+        0.0,
+        0.0
+      ],
+      "hole": [
+        0.7,
+        0.6,
+        0.2
+      ],
+      "floats": 3
+    }
+  ],
+  "seed": 5111,
+  "variants": 2,
+  "footprint_m": [
+    4.1,
+    0.8,
+    3.2
+  ],
+  "sway": false,
+  "glow": false,
+  "double_sided": true
+}

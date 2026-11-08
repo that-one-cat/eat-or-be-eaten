@@ -1,0 +1,31 @@
+{
+	"modes": [
+		{
+			"id": "classic",
+			"name": "Classic",
+			"description": "Raw mouse aim, no assists. The shipped default.",
+			"mouse_smooth_tau_s": 0.0,
+			"aim_turn_cap_deg_s": 0.0,
+			"aim_assist_strength": 0.0,
+			"lunge_strength": 0.0
+		},
+		{
+			"id": "smoothed",
+			"name": "Smoothed",
+			"description": "The mouse aim eases toward where you point, so quick flicks turn the fish gently.",
+			"mouse_smooth_tau_s": 0.1,
+			"aim_turn_cap_deg_s": 0.0,
+			"aim_assist_strength": 0.0,
+			"lunge_strength": 0.0
+		},
+		{
+			"id": "assisted",
+			"name": "Assisted",
+			"description": "Bites lock on to prey near your aim and a landed bite lunges you forward.",
+			"mouse_smooth_tau_s": 0.0,
+			"aim_turn_cap_deg_s": 0.0,
+			"aim_assist_strength": 0.5,
+			"lunge_strength": 0.5
+		}
+	]
+}

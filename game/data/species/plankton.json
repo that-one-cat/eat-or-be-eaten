@@ -1,0 +1,20 @@
+{
+	"id": "plankton",
+	"name": "Plankton",
+	"temperament": "passive",
+	"tier": "ambient",
+	"length_m": { "min": 0.01, "max": 0.02 },
+	"base_hp": 100,
+	"xp": 1,
+	"swim_speed_mps": 0.2,
+	"boost_mult": 1.8,
+	"boost_stamina": 100,
+	"turn_rate_deg_s": 220,
+	"accel_mps2": 9,
+	"drag_per_s": 1.5,
+	"brake_decel_mps2": 12,
+	"depth_range_m": [0, 50],
+	"flee_radius_m": 0.5,
+	"behaviour": { "flees": false, "boost_within_m": 0, "wander_speed_frac": 1.0, "wander_radius_m": 4, "wander_retarget_s": 10, "think_interval_ticks": 6, "seabed_clearance_m": 1.0 },
+	"zones": ["shallows", "open_water"]
+}

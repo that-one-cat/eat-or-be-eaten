@@ -1,0 +1,65 @@
+[gd_resource type="AnimationNodeBlendTree" load_steps=14 format=3]
+
+[sub_resource type="AnimationNodeAnimation" id="anim_swim"]
+animation = &"swim"
+
+[sub_resource type="AnimationNodeTimeScale" id="swim_rate"]
+
+[sub_resource type="AnimationNodeAnimation" id="anim_turn_l"]
+animation = &"turn_l"
+
+[sub_resource type="AnimationNodeAdd2" id="turn_l"]
+
+[sub_resource type="AnimationNodeAnimation" id="anim_turn_r"]
+animation = &"turn_r"
+
+[sub_resource type="AnimationNodeAdd2" id="turn_r"]
+
+[sub_resource type="AnimationNodeAnimation" id="anim_tell"]
+animation = &"tell"
+
+[sub_resource type="AnimationNodeAdd2" id="tell"]
+
+[sub_resource type="AnimationNodeAnimation" id="anim_dash"]
+animation = &"dash"
+
+[sub_resource type="AnimationNodeOneShot" id="dash"]
+fadein_time = 0.06
+fadeout_time = 0.15
+
+[sub_resource type="AnimationNodeAnimation" id="anim_bite"]
+animation = &"bite"
+
+[sub_resource type="AnimationNodeOneShot" id="bite"]
+filter_enabled = true
+filters = ["Rig/Skeleton3D:jaw", "Rig/Skeleton3D:spine_0", "Rig/Skeleton3D:spine_1"]
+fadein_time = 0.03
+fadeout_time = 0.08
+
+[resource]
+nodes/output/position = Vector2(1500, 140)
+nodes/anim_swim/node = SubResource("anim_swim")
+nodes/anim_swim/position = Vector2(0, 100)
+nodes/swim_rate/node = SubResource("swim_rate")
+nodes/swim_rate/position = Vector2(200, 100)
+nodes/anim_turn_l/node = SubResource("anim_turn_l")
+nodes/anim_turn_l/position = Vector2(200, 260)
+nodes/turn_l/node = SubResource("turn_l")
+nodes/turn_l/position = Vector2(400, 120)
+nodes/anim_turn_r/node = SubResource("anim_turn_r")
+nodes/anim_turn_r/position = Vector2(400, 280)
+nodes/turn_r/node = SubResource("turn_r")
+nodes/turn_r/position = Vector2(600, 120)
+nodes/anim_tell/node = SubResource("anim_tell")
+nodes/anim_tell/position = Vector2(600, 280)
+nodes/tell/node = SubResource("tell")
+nodes/tell/position = Vector2(800, 120)
+nodes/anim_dash/node = SubResource("anim_dash")
+nodes/anim_dash/position = Vector2(800, 300)
+nodes/dash/node = SubResource("dash")
+nodes/dash/position = Vector2(1000, 120)
+nodes/anim_bite/node = SubResource("anim_bite")
+nodes/anim_bite/position = Vector2(1000, 320)
+nodes/bite/node = SubResource("bite")
+nodes/bite/position = Vector2(1250, 120)
+node_connections = [&"swim_rate", 0, &"anim_swim", &"turn_l", 0, &"swim_rate", &"turn_l", 1, &"anim_turn_l", &"turn_r", 0, &"turn_l", &"turn_r", 1, &"anim_turn_r", &"tell", 0, &"turn_r", &"tell", 1, &"anim_tell", &"dash", 0, &"tell", &"dash", 1, &"anim_dash", &"bite", 0, &"dash", &"bite", 1, &"anim_bite", &"output", 0, &"bite"]

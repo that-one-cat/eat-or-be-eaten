@@ -1,0 +1,23 @@
+{
+	"id": "silver_schooling_fish",
+	"name": "Silver Schooling Fish",
+	"temperament": "passive",
+	"tier": "interactive",
+	"schooling": true,
+	"length_m": { "min": 0.08, "max": 0.15 },
+	"base_hp": 100,
+	"xp": 4.5,
+	"xp_band_mult": [1.5, 1, 1, 1],
+	"swim_speed_mps": 2.5,
+	"boost_mult": 1.8,
+	"boost_stamina": 100,
+	"turn_rate_deg_s": 220,
+	"accel_mps2": 9,
+	"drag_per_s": 1.5,
+	"brake_decel_mps2": 12,
+	"depth_range_m": [0, 40],
+	"flee_radius_m": 4.8,
+	"school_size": { "min": 10, "max": 30 },
+	"behaviour": { "flees": true, "flee_min_length_ratio": 1.5, "flee_release_mult": 2.0, "boost_within_m": 2.4, "wander_speed_frac": 0.5, "wander_radius_m": 15, "wander_retarget_s": 6, "think_interval_ticks": 3, "seabed_clearance_m": 1.0 },
+	"zones": ["shallows", "kelp_forest"]
+}

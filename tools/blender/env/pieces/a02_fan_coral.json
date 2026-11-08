@@ -1,0 +1,52 @@
+{
+  "id": "a02_fan_coral",
+  "module": "a_coral_fan",
+  "biome": "a",
+  "size_class": "env_medium",
+  "palette_row": 41,
+  "palette": {
+    "base": "#EE8A3C",
+    "top": "#F8B062",
+    "side": "#E87E34",
+    "side_alt": "#F2994A",
+    "under": "#BF5E2A",
+    "dark": "#7E3A20",
+    "inner": "#9C4826",
+    "detail": "#F49A58",
+    "detail_alt": "#EA8A4C",
+    "tip": "#F8B276",
+    "trim": "#EC7C6C",
+    "trim_alt": "#DE6A60"
+  },
+  "params": {
+    "axiom": "F[++A][+A][A][-B][--B]",
+    "iterations": 3,
+    "length": 0.3,
+    "angle": 30.0,
+    "tropism": 0.2,
+    "radius": 0.045,
+    "len_decay": 0.9
+  },
+  "seed": 4002,
+  "variants": 3,
+  "footprint_m": [
+    1.8,
+    1.4,
+    0.2
+  ],
+  "sway": true,
+  "glow": false,
+  "variant_params": [
+    {},
+    {
+      "length": 0.2
+    },
+    {
+      "scheme": "coral",
+      "length": 0.3,
+      "tropism": 0.26,
+      "angle": 28.0,
+      "axiom": "F[+A][-B]"
+    }
+  ]
+}

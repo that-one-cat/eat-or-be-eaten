@@ -1,0 +1,67 @@
+{
+  "id": "a17_tube_sponge_yellow",
+  "module": "a_sponge_cluster",
+  "biome": "a",
+  "size_class": "env_small",
+  "palette_row": 47,
+  "palette": {
+    "base": "#F2C14A",
+    "base_alt": "#9E8A7E",
+    "top": "#FAD772",
+    "top_alt": "#B8A090",
+    "side": "#E8B23C",
+    "side_alt": "#F6CC5C",
+    "under": "#C08A2C",
+    "dark": "#7A4E18",
+    "inner": "#A86E1E",
+    "detail": "#F59A4A",
+    "detail_alt": "#EC8640",
+    "tip": "#F9B46A",
+    "trim": "#E8665A",
+    "trim_alt": "#D4554C"
+  },
+  "params": {
+    "scheme": "yellow",
+    "count": 4,
+    "height": [
+      0.22,
+      0.55
+    ],
+    "radius": [
+      0.06,
+      0.09
+    ],
+    "spread": 0.15,
+    "lean": 0.25,
+    "rock": 0.12
+  },
+  "seed": 4017,
+  "variants": 3,
+  "footprint_m": [
+    0.3,
+    0.6,
+    0.6
+  ],
+  "sway": false,
+  "glow": false,
+  "variant_params": [
+    {},
+    {
+      "count": 3,
+      "rock": 0.0
+    },
+    {
+      "count": 5,
+      "height": [
+        0.3,
+        0.7
+      ],
+      "radius": [
+        0.07,
+        0.1
+      ],
+      "spread": 0.18,
+      "rock": 0.0
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "c13_tube_worm",
+  "module": "bc_tube_worm",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 54,
+  "palette": {
+    "base": "#6FA8FF",
+    "side": "#2A2A8A",
+    "side_alt": "#22207A",
+    "under": "#14145A",
+    "dark": "#0E0E3A",
+    "inner": "#181860",
+    "accent": "#5AC8FF"
+  },
+  "params": {},
+  "variant_params": [
+    {},
+    {
+      "worms": [
+        [
+          -0.2,
+          0.0,
+          1.6
+        ],
+        [
+          0.22,
+          0.1,
+          1.2
+        ]
+      ]
+    }
+  ],
+  "seed": 5013,
+  "variants": 2,
+  "footprint_m": [
+    0.6,
+    2.2,
+    0.4
+  ],
+  "sway": true,
+  "glow": true
+}

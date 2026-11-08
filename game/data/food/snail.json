@@ -1,0 +1,44 @@
+{
+	"id": "snail",
+	"name": "Sea snail",
+	"kind": "hard",
+	"pieces": [
+		{
+			"id": "a23_snail_orange",
+			"zones": [
+				"shallows",
+				"shallows_spawn_c",
+				"shallows_spawn_w",
+				"shallows_spawn_e",
+				"kelp_forest",
+				"rock_arches",
+				"sunken_boat"
+			]
+		},
+		{
+			"id": "c21_snail_cyan",
+			"above_y": -65
+		},
+		{
+			"id": "c22_snail_violet"
+		}
+	],
+	"length_m": 0.06,
+	"radius_m": 0.1,
+	"hp_mult": 2,
+	"xp": 1.0,
+	"xp_band_mult": [
+		1,
+		0.15,
+		0.05,
+		0.05
+	],
+	"respawn_s": 150,
+	"regen_s": 15,
+	"sfx": "crunch",
+	"fx_colors": [
+		"#F4A261",
+		"#F6F1E4",
+		"#C77D4E"
+	]
+}

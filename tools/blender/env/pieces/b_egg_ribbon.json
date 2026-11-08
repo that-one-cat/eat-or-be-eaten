@@ -1,0 +1,54 @@
+{
+  "id": "b_egg_ribbon",
+  "module": "egg_kelp",
+  "biome": "b",
+  "size_class": "env_small",
+  "palette_row": 34,
+  "palette": {
+    "base": "#F4A261",
+    "base_alt": "#F8C08A",
+    "top": "#FFD3A5",
+    "top_alt": "#FFE4C8",
+    "side": "#F28CA0",
+    "side_alt": "#F7B0BE",
+    "under": "#C77D4E",
+    "dark": "#8A4B3A",
+    "detail": "#CFEFE3",
+    "detail_alt": "#9ED9CF",
+    "tip": "#F6F1E4",
+    "accent": "#FFF8E7",
+    "accent_alt": "#D9C7F2",
+    "inner": "#B79BE0",
+    "trim": "#BFE6EA",
+    "trim_alt": "#8CCBD6"
+  },
+  "params": {
+    "shape": "ribbon"
+  },
+  "variant_params": [
+    {},
+    {
+      "turns": 1.25,
+      "height": 0.26,
+      "spiral_r": [
+        0.06,
+        0.13
+      ],
+      "segments": 14,
+      "rock": [
+        0.1,
+        0.06,
+        0.09
+      ]
+    }
+  ],
+  "seed": 6104,
+  "variants": 2,
+  "footprint_m": [
+    0.35,
+    0.45,
+    0.35
+  ],
+  "sway": false,
+  "glow": false
+}

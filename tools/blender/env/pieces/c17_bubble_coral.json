@@ -1,0 +1,33 @@
+{
+  "id": "c17_bubble_coral",
+  "module": "bc_bubble_coral",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 58,
+  "palette": {
+    "base": "#2A9EA6",
+    "base_alt": "#22888F",
+    "under": "#13505A",
+    "accent": "#7FFFF0"
+  },
+  "params": {
+    "points": 18,
+    "glow_min": 0.72
+  },
+  "variant_params": [
+    {},
+    {
+      "beads": 6,
+      "spread": 0.5
+    }
+  ],
+  "seed": 5017,
+  "variants": 2,
+  "footprint_m": [
+    1.4,
+    0.7,
+    1.2
+  ],
+  "sway": false,
+  "glow": true
+}

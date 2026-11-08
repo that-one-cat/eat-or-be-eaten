@@ -1,0 +1,41 @@
+{
+  "id": "c09_crack_slab",
+  "module": "bc_crack_slab",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 50,
+  "palette": {
+    "base": "#3A4E78",
+    "top": "#5A7299",
+    "top_alt": "#4E6790",
+    "side": "#34477A",
+    "side_alt": "#3F5686",
+    "under": "#1E2652",
+    "dark": "#151B40",
+    "accent": "#3FF0E0",
+    "accent_alt": "#C070FF"
+  },
+  "params": {
+    "gap": 0.26,
+    "bed_scale": 0.86
+  },
+  "variant_params": [
+    {},
+    {
+      "radius": [
+        2.4,
+        1.8
+      ],
+      "plates": 7
+    }
+  ],
+  "seed": 5009,
+  "variants": 2,
+  "footprint_m": [
+    6.5,
+    0.7,
+    4.4
+  ],
+  "sway": false,
+  "glow": true
+}

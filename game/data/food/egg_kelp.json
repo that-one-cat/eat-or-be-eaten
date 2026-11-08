@@ -1,0 +1,30 @@
+{
+	"id": "egg_kelp",
+	"name": "Kelp egg capsules",
+	"kind": "soft",
+	"pieces": [
+		{
+			"id": "b_egg_capsules"
+		},
+		{
+			"id": "b_egg_ribbon"
+		}
+	],
+	"length_m": 0.04,
+	"radius_m": 0.12,
+	"swallow_ratio": 0.5,
+	"xp": 0.7,
+	"xp_band_mult": [
+		1,
+		0.15,
+		0.05,
+		0.05
+	],
+	"respawn_s": 180,
+	"sfx": "crunch",
+	"fx_colors": [
+		"#CFEFE3",
+		"#BFE6EA",
+		"#9ED9CF"
+	]
+}

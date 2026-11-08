@@ -1,0 +1,19 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://shaders/fish_swim.gdshader" id="1_shader"]
+[ext_resource type="Texture2D" path="res://assets/textures/palette.png" id="2_palette"]
+
+[resource]
+resource_name = "M_Palette_SharkSwim"
+render_priority = 0
+shader = ExtResource("1_shader")
+shader_parameter/palette = ExtResource("2_palette")
+shader_parameter/swim_speed = 4.0
+shader_parameter/side_amp = 0.006
+shader_parameter/yaw_amp = 0.035
+shader_parameter/yaw_pivot_z = -0.25
+shader_parameter/wave_amp = 0.06
+shader_parameter/wave_freq = 4.0
+shader_parameter/wave_exp = 2.2
+shader_parameter/nose_z = -0.42
+shader_parameter/rim_strength = 0.2

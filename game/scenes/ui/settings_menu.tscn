@@ -1,0 +1,224 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/settings_menu.gd" id="1_script"]
+[ext_resource type="Theme" path="res://ui/theme/main_theme.tres" id="2_theme"]
+
+[node name="SettingsMenu" type="CanvasLayer"]
+process_mode = 3
+layer = 30
+visible = false
+script = ExtResource("1_script")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+
+[node name="Dim" type="ColorRect" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.01, 0.04, 0.07, 0.6)
+
+[node name="Center" type="CenterContainer" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="Root/Center"]
+custom_minimum_size = Vector2(620, 0)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="Root/Center/Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 20
+
+[node name="Column" type="VBoxContainer" parent="Root/Center/Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Root/Center/Panel/Margin/Column"]
+layout_mode = 2
+theme_type_variation = &"OverlayTitle"
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="Grid" type="GridContainer" parent="Root/Center/Panel/Margin/Column"]
+layout_mode = 2
+theme_override_constants/h_separation = 18
+theme_override_constants/v_separation = 14
+columns = 3
+
+[node name="QualityOptionLabel" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+theme_type_variation = &"HudValue"
+text = "Quality"
+
+[node name="QualityOption" type="OptionButton" parent="Root/Center/Panel/Margin/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="QualityNote" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_type_variation = &"HudSmall"
+text = "next dive"
+horizontal_alignment = 2
+
+[node name="MasterSliderLabel" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+theme_type_variation = &"HudValue"
+text = "Master volume"
+
+[node name="MasterSlider" type="HSlider" parent="Root/Center/Panel/Margin/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 100.0
+step = 1.0
+value = 100.0
+
+[node name="MasterValue" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_type_variation = &"HudValue"
+text = "100%"
+horizontal_alignment = 2
+
+[node name="MusicSliderLabel" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+theme_type_variation = &"HudValue"
+text = "Music volume"
+
+[node name="MusicSlider" type="HSlider" parent="Root/Center/Panel/Margin/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 100.0
+step = 1.0
+value = 100.0
+
+[node name="MusicValue" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_type_variation = &"HudValue"
+text = "100%"
+horizontal_alignment = 2
+
+[node name="SfxSliderLabel" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+theme_type_variation = &"HudValue"
+text = "SFX volume"
+
+[node name="SfxSlider" type="HSlider" parent="Root/Center/Panel/Margin/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 100.0
+step = 1.0
+value = 100.0
+
+[node name="SfxValue" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_type_variation = &"HudValue"
+text = "100%"
+horizontal_alignment = 2
+
+[node name="SensitivitySliderLabel" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+theme_type_variation = &"HudValue"
+text = "Mouse sensitivity"
+
+[node name="SensitivitySlider" type="HSlider" parent="Root/Center/Panel/Margin/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+min_value = 0.25
+max_value = 3.0
+step = 0.05
+value = 1.0
+
+[node name="SensitivityValue" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+theme_type_variation = &"HudValue"
+text = "100%"
+horizontal_alignment = 2
+
+[node name="InvertCheckLabel" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+theme_type_variation = &"HudValue"
+text = "Invert Y"
+
+[node name="InvertCheck" type="CheckButton" parent="Root/Center/Panel/Margin/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="InvertCheckPad" type="Control" parent="Root/Center/Panel/Margin/Column/Grid"]
+layout_mode = 2
+
+[node name="ControlModeOptionLabel" type="Label" parent="Root/Center/Panel/Margin/Column/Grid"]
+custom_minimum_size = Vector2(190, 0)
+layout_mode = 2
+theme_type_variation = &"HudValue"
+text = "Controls"
+
+[node name="ControlModeOption" type="OptionButton" parent="Root/Center/Panel/Margin/Column/Grid"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ControlModePad" type="Control" parent="Root/Center/Panel/Margin/Column/Grid"]
+layout_mode = 2
+
+[node name="ControlModeNote" type="Label" parent="Root/Center/Panel/Margin/Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_type_variation = &"HudSmall"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="BackButton" type="Button" parent="Root/Center/Panel/Margin/Column"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(240, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Back"

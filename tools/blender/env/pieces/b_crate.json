@@ -1,0 +1,40 @@
+{
+  "id": "b_crate",
+  "module": "bc_crate",
+  "biome": "b",
+  "size_class": "env_small",
+  "palette_row": 62,
+  "palette": {
+    "base": "#6B4E3A",
+    "top": "#8A6A4E",
+    "top_alt": "#7C5E44",
+    "side": "#5E4636",
+    "side_alt": "#6E5440",
+    "under": "#3A2C24",
+    "dark": "#1A1618",
+    "detail": "#8FB0A8",
+    "detail_alt": "#789A94",
+    "trim": "#4E3A2E",
+    "trim_alt": "#5E4838",
+    "tip": "#8A4A3E"
+  },
+  "params": {},
+  "variant_params": [
+    {},
+    {
+      "broken": true
+    },
+    {
+      "count": 3
+    }
+  ],
+  "seed": 5109,
+  "variants": 3,
+  "footprint_m": [
+    1.1,
+    0.8,
+    0.9
+  ],
+  "sway": false,
+  "glow": false
+}

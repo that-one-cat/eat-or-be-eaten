@@ -1,0 +1,20 @@
+{
+	"id": "puffer",
+	"name": "Puffer",
+	"temperament": "retaliate",
+	"tier": "interactive",
+	"length_m": { "min": 0.30, "max": 0.50 },
+	"base_hp": 100,
+	"xp": 22.5,
+	"swim_speed_mps": 1.2,
+	"boost_mult": 1.8,
+	"boost_stamina": 100,
+	"turn_rate_deg_s": 220,
+	"accel_mps2": 9,
+	"drag_per_s": 1.5,
+	"brake_decel_mps2": 12,
+	"depth_range_m": [0, 50],
+	"inflate": { "scale": 1.8, "duration_s": 5, "spike_damage_frac_of_biter_max_hp": 0.10 },
+	"behaviour": { "boost_within_m": 0, "wander_speed_frac": 0.4, "wander_radius_m": 8, "wander_retarget_s": 10, "think_interval_ticks": 3, "seabed_clearance_m": 1.0 },
+	"zones": ["shallows", "rock_arches"]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "a07_anemone_peach",
+  "module": "a_anemone",
+  "biome": "a",
+  "size_class": "env_small",
+  "palette_row": 45,
+  "palette": {
+    "base": "#F5A47E",
+    "top": "#FBC79A",
+    "side": "#F3B088",
+    "side_alt": "#EE9A74",
+    "tip": "#FCE0A8",
+    "detail": "#F2D9A6",
+    "detail_alt": "#E6C690",
+    "dark": "#A3474F",
+    "under": "#8A3A44",
+    "trim": "#EBC39C",
+    "trim_alt": "#DDAE86",
+    "inner": "#B78A68"
+  },
+  "params": {},
+  "seed": 4007,
+  "variants": 3,
+  "footprint_m": [
+    0.9,
+    0.6,
+    0.9
+  ],
+  "sway": true,
+  "glow": false,
+  "variant_params": [
+    {
+      "scheme": "cream"
+    },
+    {
+      "scheme": "maroon",
+      "radius": 0.24,
+      "height": 0.4,
+      "length": 0.4,
+      "t_radius": 0.06
+    },
+    {
+      "scheme": "cream",
+      "tentacles": 12,
+      "radius": 0.14,
+      "height": 0.18,
+      "length": 0.26,
+      "t_radius": 0.04
+    }
+  ]
+}

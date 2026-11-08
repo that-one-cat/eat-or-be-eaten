@@ -1,0 +1,122 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/victory_screen.gd" id="1_script"]
+[ext_resource type="Theme" path="res://ui/theme/main_theme.tres" id="2_theme"]
+
+[node name="VictoryScreen" type="CanvasLayer"]
+process_mode = 3
+layer = 25
+visible = false
+script = ExtResource("1_script")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_theme")
+
+[node name="Dim" type="ColorRect" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.01, 0.05, 0.09, 0.5)
+
+[node name="Center" type="CenterContainer" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="Root/Center"]
+custom_minimum_size = Vector2(520, 0)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="Root/Center/Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 22
+
+[node name="Column" type="VBoxContainer" parent="Root/Center/Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Title" type="Label" parent="Root/Center/Panel/Margin/Column"]
+layout_mode = 2
+theme_type_variation = &"OverlayTitle"
+theme_override_colors/font_color = Color(1, 0.88, 0.3, 1)
+theme_override_font_sizes/font_size = 56
+text = "VICTORY!"
+horizontal_alignment = 1
+
+[node name="Sub" type="Label" parent="Root/Center/Panel/Margin/Column"]
+layout_mode = 2
+theme_type_variation = &"OverlaySub"
+text = "The giant shark of the abyss is defeated."
+horizontal_alignment = 1
+
+[node name="Stats" type="GridContainer" parent="Root/Center/Panel/Margin/Column"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 28
+theme_override_constants/v_separation = 10
+columns = 2
+
+[node name="TimeLabel" type="Label" parent="Root/Center/Panel/Margin/Column/Stats"]
+layout_mode = 2
+theme_type_variation = &"OverlaySub"
+text = "Run time"
+
+[node name="TimeValue" type="Label" parent="Root/Center/Panel/Margin/Column/Stats"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HudTitle"
+text = "0:00"
+
+[node name="DeathsLabel" type="Label" parent="Root/Center/Panel/Margin/Column/Stats"]
+layout_mode = 2
+theme_type_variation = &"OverlaySub"
+text = "Deaths"
+
+[node name="DeathsValue" type="Label" parent="Root/Center/Panel/Margin/Column/Stats"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_type_variation = &"HudTitle"
+text = "0"
+
+[node name="MutationsLabel" type="Label" parent="Root/Center/Panel/Margin/Column/Stats"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_type_variation = &"OverlaySub"
+text = "Mutations"
+
+[node name="MutationList" type="VBoxContainer" parent="Root/Center/Panel/Margin/Column/Stats"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Buttons" type="HBoxContainer" parent="Root/Center/Panel/Margin/Column"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 16
+
+[node name="PlayAgainButton" type="Button" parent="Root/Center/Panel/Margin/Column/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Play again"
+
+[node name="ToMenuButton" type="Button" parent="Root/Center/Panel/Margin/Column/Buttons"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Menu"

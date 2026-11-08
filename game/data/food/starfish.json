@@ -1,0 +1,28 @@
+{
+	"id": "starfish",
+	"name": "Starfish",
+	"kind": "hard",
+	"pieces": [
+		{
+			"id": "a14_starfish"
+		}
+	],
+	"length_m": 0.1,
+	"radius_m": 0.15,
+	"hp_mult": 2,
+	"xp": 0.7,
+	"xp_band_mult": [
+		1,
+		0.15,
+		0.05,
+		0.05
+	],
+	"respawn_s": 240,
+	"regen_s": 20,
+	"sfx": "crunch",
+	"fx_colors": [
+		"#F2C14A",
+		"#F59A4A",
+		"#FAD772"
+	]
+}

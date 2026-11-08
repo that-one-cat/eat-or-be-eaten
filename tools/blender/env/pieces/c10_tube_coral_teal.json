@@ -1,0 +1,40 @@
+{
+  "id": "c10_tube_coral_teal",
+  "module": "bc_tube_cluster",
+  "biome": "c",
+  "size_class": "env_small",
+  "palette_row": 51,
+  "palette": {
+    "base": "#2FB8A8",
+    "base_alt": "#27A396",
+    "side": "#1D7E78",
+    "side_alt": "#176A68",
+    "under": "#0F3D44",
+    "dark": "#0A2A30",
+    "inner": "#145E5C",
+    "accent": "#5FFFF0"
+  },
+  "params": {
+    "count": 5,
+    "spread": 0.6
+  },
+  "variant_params": [
+    {},
+    {
+      "count": 4,
+      "height": [
+        0.8,
+        1.7
+      ]
+    }
+  ],
+  "seed": 5010,
+  "variants": 2,
+  "footprint_m": [
+    1.5,
+    1.9,
+    1.8
+  ],
+  "sway": false,
+  "glow": true
+}

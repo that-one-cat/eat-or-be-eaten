@@ -1,0 +1,30 @@
+{
+	"id": "egg_pearl",
+	"name": "Pearl egg strand",
+	"kind": "soft",
+	"pieces": [
+		{
+			"id": "b_egg_pearls"
+		},
+		{
+			"id": "b_egg_lavender"
+		}
+	],
+	"length_m": 0.04,
+	"radius_m": 0.12,
+	"swallow_ratio": 0.5,
+	"xp": 0.8,
+	"xp_band_mult": [
+		1,
+		0.15,
+		0.05,
+		0.05
+	],
+	"respawn_s": 240,
+	"sfx": "crunch",
+	"fx_colors": [
+		"#F6F1E4",
+		"#FFF8E7",
+		"#B79BE0"
+	]
+}

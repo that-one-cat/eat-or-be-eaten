@@ -1,0 +1,11 @@
+{
+	"words": [
+		{ "id": "god", "word": "eatgod", "kind": "dev" }
+	],
+	"menu_keys": { "physical": ["F1", "F4", "M"] },
+	"console_keys": {
+		"physical": ["QuoteLeft"],
+		"keycode": ["QuoteLeft", "AsciiTilde"],
+		"unicode": [96, 126, 1105, 1025]
+	}
+}
